@@ -475,7 +475,7 @@ E-mail: shengbin@cs.sjtu.edu.cn}
 % in the abstract or keywords.
 \IEEEtitleabstractindextext{%
 \begin{abstract}
-The abstract goes here.
+Grass is a very import element of nature, however create and implement a large scale, realistic grassland is not that easy due to extremely high computation complexity and large amount of data needed for simulation and rendering. Common sense tells us grass blades are simple, however there are numerous kinds of grass blade in the world and it's not possible for any system to store all kinds of grass blades beforehand. Obtain grass blade with interactive camera can be an intuitive solution for this problem. We provide a method 
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
@@ -562,8 +562,11 @@ Subsubsection text here.
 
 \section{Related Work}
 
-\section{}
+\section{Algorithm Overview}
 
+\section{Blade Capture}
+
+\section{}
 
 \section{Conclusion}
 The conclusion goes here.

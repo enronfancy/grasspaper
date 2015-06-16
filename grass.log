@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.9)  15 JUN 2015 20:34
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.15)  16 JUN 2015 16:28
 entering extended mode
-**C:/Users/BeYourself/Desktop/capture/IEEEtran/grass.tex
-(C:/Users/BeYourself/Desktop/capture/IEEEtran/grass.tex
+**C:/Users/Enronfancy/Desktop/grasspaper/grass.tex
+(C:/Users/Enronfancy/Desktop/grasspaper/grass.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
-(C:\Users\BeYourself\Desktop\capture\IEEEtran\IEEEtran.cls
+(C:\Users\Enronfancy\Desktop\grasspaper\IEEEtran.cls
 Document Class: IEEEtran 2014/09/17 V1.8a by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -118,7 +118,7 @@ LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
 )
-(C:\Users\BeYourself\Desktop\capture\IEEEtran\grass.aux)
+(C:\Users\Enronfancy\Desktop\grasspaper\grass.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 376.
 LaTeX Font Info:    ... okay on input line 376.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 376.
@@ -142,13 +142,6 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11.04124> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 488.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8.03> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 488.
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 488.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8.03> on input line 488.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.62097> on input line 488.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.015> on input line 488.
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 48
 8.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -162,6 +155,13 @@ LaTeX Font Info:    Try loading font information for U+pzd on input line 488.
 (C:\CTEX\MiKTeX\tex\latex\psnfss\upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 488.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8.03> on input line 488.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5.62097> on input line 488.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <4.015> on input line 488.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11.04124> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 516.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <11.04124> not available
@@ -179,35 +179,34 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 554.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9.53561> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 560.
-LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 788
+LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 697
 .
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.02625> on input line 788.
+(Font)              <7.02625> on input line 697.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.91833> on input line 788.
+(Font)              <4.91833> on input line 697.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <3.51312> on input line 788.
+(Font)              <3.51312> on input line 697.
  [1{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
 
 
 ]
-(C:\Users\BeYourself\Desktop\capture\IEEEtran\grass.aux) ) 
+(C:\Users\Enronfancy\Desktop\grasspaper\grass.aux) ) 
 Here is how much of TeX's memory you used:
- 1276 strings out of 495354
- 22666 string characters out of 3183860
- 69499 words of memory out of 3000000
- 4481 multiletter control sequences out of 15000+200000
- 52465 words of font info for 103 fonts, out of 3000000 for 9000
+ 1274 strings out of 495354
+ 22587 string characters out of 3183858
+ 70499 words of memory out of 3000000
+ 4480 multiletter control sequences out of 15000+200000
+ 50705 words of font info for 101 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
- 31i,8n,31p,246b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/CTEX/MiKTeX/fonts
-/enc/dvips/fontname/8r.enc}<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/CTEX/MiKTeX/fonts/
-type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.
-pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/CTEX/MiKTeX/fonts/t
-ype1/urw/palatino/uplri8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb
->
-Output written on grass.pdf (1 page, 75894 bytes).
+ 31i,8n,31p,584b,289s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/CTEX/MiKTeX/fonts/enc/d
+vips/fontname/8r.enc}<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
+C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/
+urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb><C
+:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/u
+rw/palatino/uplri8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on grass.pdf (1 page, 77805 bytes).
 PDF statistics:
  35 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
