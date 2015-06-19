@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.15)  16 JUN 2015 16:28
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.15)  19 JUN 2015 15:29
 entering extended mode
 **C:/Users/Enronfancy/Desktop/grasspaper/grass.tex
 (C:/Users/Enronfancy/Desktop/grasspaper/grass.tex
@@ -118,97 +118,189 @@ LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
 )
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(C:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(C:\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count94
+))
+\Gin@req@height=\dimen125
+\Gin@req@width=\dimen126
+)
+(C:\CTEX\MiKTeX\tex\latex\caption\caption.sty
+Package: caption 2011/11/10 v3.2e Customizing captions (AR)
+
+(C:\CTEX\MiKTeX\tex\latex\caption\caption3.sty
+Package: caption3 2011/11/01 v1.4a caption3 kernel (AR)
+\captionmargin=\dimen127
+\captionmargin@=\dimen128
+\captionwidth=\dimen129
+\caption@indent=\dimen130
+\caption@parindent=\dimen131
+\caption@hangindent=\dimen132
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \sffamily \footnotesize #1}\\{\normalfont \sffamily \footnotesize #2}\par
+ \addvspace {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEf
+igurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \sffamily \footnotes
+ize {#1.}\nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbo
+x {\normalfont \sffamily \footnotesize {#1.}\nobreakspace }\parbox [t]{\hsize }
+{\normalfont \sffamily \footnotesize \noindent \unhbox \@tempboxa #2}\else \hbo
+x to\hsize {\normalfont \sffamily \footnotesize \box \@tempboxa \hfil }\fi \fi 
+.
+\c@ContinuedFloat=\count95
+) (C:\CTEX\MiKTeX\tex\latex\caption\subcaption.sty
+Package: subcaption 2011/10/30 v1.1c Sub-captions (AR)
+\c@subfigure=\count96
+\c@subtable=\count97
+)
 (C:\Users\Enronfancy\Desktop\grasspaper\grass.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 376.
-LaTeX Font Info:    ... okay on input line 376.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 376.
-LaTeX Font Info:    ... okay on input line 376.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 376.
-LaTeX Font Info:    ... okay on input line 376.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 376.
-LaTeX Font Info:    ... okay on input line 376.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 376.
-LaTeX Font Info:    ... okay on input line 376.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 376.
-LaTeX Font Info:    ... okay on input line 376.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 380.
+LaTeX Font Info:    ... okay on input line 380.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 380.
+LaTeX Font Info:    ... okay on input line 380.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 380.
+LaTeX Font Info:    ... okay on input line 380.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 380.
+LaTeX Font Info:    ... okay on input line 380.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 380.
+LaTeX Font Info:    ... okay on input line 380.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 380.
+LaTeX Font Info:    ... okay on input line 380.
 
 -- Lines per column: 61 (exact).
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 488.
+(C:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count98
+\scratchdimen=\dimen133
+\scratchbox=\box28
+\nofMPsegments=\count99
+\nofMParguments=\count100
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count101
+\MPscratchDim=\dimen134
+\MPnumerator=\count102
+\makeMPintoPDFobject=\count103
+\everyMPtoPDFconversion=\toks17
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 507.
 
-(C:\CTEX\MiKTeX\tex\latex\psnfss\ot1phv.fd
+ (C:\CTEX\MiKTeX\tex\latex\psnfss\ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 488.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 507.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8.03> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 488.
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 48
-8.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 507.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 50
+7.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11.04124> on input line 488.
+(Font)              <11.04124> on input line 507.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.72884> on input line 488.
+(Font)              <7.72884> on input line 507.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.52061> on input line 488.
-LaTeX Font Info:    Try loading font information for U+pzd on input line 488.
+(Font)              <5.52061> on input line 507.
+LaTeX Font Info:    Try loading font information for U+pzd on input line 507.
 
 (C:\CTEX\MiKTeX\tex\latex\psnfss\upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 488.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 507.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8.03> on input line 488.
+(Font)              <8.03> on input line 507.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.62097> on input line 488.
+(Font)              <5.62097> on input line 507.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.015> on input line 488.
+(Font)              <4.015> on input line 507.
+
+<figs/largescene.jpg, id=1, 1274.7625pt x 501.875pt>
+File: figs/largescene.jpg Graphic file (type jpg)
+ <use figs/largescene.jpg>
+Package pdftex.def Info: figs/largescene.jpg used on input line 507.
+(pdftex.def)             Requested size: 492.03969pt x 142.26239pt.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 516.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 536.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <11.04124> not available
 
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 516.
-LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 544
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 536.
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 564
 .
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.53561> on input line 544.
+(Font)              <9.53561> on input line 564.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6.6749> on input line 544.
+(Font)              <6.6749> on input line 564.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.7678> on input line 544.
+(Font)              <4.7678> on input line 564.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 554.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 574.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 560.
-LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 697
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 580.
+LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 685
 .
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.02625> on input line 697.
+(Font)              <7.02625> on input line 685.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.91833> on input line 697.
+(Font)              <4.91833> on input line 685.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <3.51312> on input line 697.
- [1{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
+(Font)              <3.51312> on input line 685.
 
+[1{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
+
+
+ <C:/Users/Enronfancy/Desktop/grasspaper/figs/largescene.jpg>] [2
 
 ]
 (C:\Users\Enronfancy\Desktop\grasspaper\grass.aux) ) 
 Here is how much of TeX's memory you used:
- 1274 strings out of 495354
- 22587 string characters out of 3183858
- 70499 words of memory out of 3000000
- 4480 multiletter control sequences out of 15000+200000
+ 3221 strings out of 495354
+ 53226 string characters out of 3183858
+ 111807 words of memory out of 3000000
+ 6385 multiletter control sequences out of 15000+200000
  50705 words of font info for 101 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
- 31i,8n,31p,584b,289s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,8n,38p,758b,304s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/CTEX/MiKTeX/fonts/enc/d
-vips/fontname/8r.enc}<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
-C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/
-urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb><C
-:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/u
-rw/palatino/uplri8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on grass.pdf (1 page, 77805 bytes).
+vips/fontname/8r.enc}<C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/CT
+EX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/h
+elvetic/uhvro8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/CTE
+X/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/z
+apfding/uzdr.pfb>
+Output written on grass.pdf (2 pages, 955579 bytes).
 PDF statistics:
  35 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

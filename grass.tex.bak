@@ -368,12 +368,19 @@
 % (Unless specifically asked to do so by the journal or conference you plan
 % to submit to, of course. )
 
+%Mine
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
 
 
 \begin{document}
+
+
+
 %
 % paper title
 % Titles are generally capitalized except for words such as a, an, and, as,
@@ -405,7 +412,7 @@
 % journal papers have the author affiliations above the "Manuscript
 % received ..."  text while in non-compsoc journals this is reversed. Sigh.
 
-\author{Bin Sheng,~\IEEEmembership{Member,~IEEE,}% <-this % stops a space
+\author{Bin Sheng,~\IEEEmembership{Member,~IEEE}% <-this % stops a space
 \IEEEcompsocitemizethanks{\IEEEcompsocthanksitem B.Sheng is with the Department
 of Computer Science and Engineering, Shanghai Jiao Tong, Shanghai,
 China, 200240.\protect\\
@@ -467,7 +474,6 @@ E-mail: shengbin@cs.sjtu.edu.cn}
 %\IEEEspecialpapernotice{(Invited Paper)}
 
 
-
 % for Computer Society papers, we must declare the abstract and index terms
 % PRIOR to the title within the \IEEEtitleabstractindextext IEEEtran
 % command as these need to go into the title area created by \maketitle.
@@ -475,7 +481,7 @@ E-mail: shengbin@cs.sjtu.edu.cn}
 % in the abstract or keywords.
 \IEEEtitleabstractindextext{%
 \begin{abstract}
-Grass is a very import element of nature, however create and implement a large scale, realistic grassland is not that easy due to extremely high computation complexity and large amount of data needed for simulation and rendering. Common sense tells us grass blades are simple, however there are numerous kinds of grass blade in the world and it's not possible for any system to store all kinds of grass blades beforehand. Obtain grass blade with interactive camera can be an intuitive solution for this problem. We provide a method 
+Grass is a very import element of nature, however create and implement a large scale, realistic grassland is not that easy due to extremely high computation complexity and large amount of data needed for simulation and rendering. Common sense tells us grass blades are simple, however there are numerous kinds of grass blade in the world and it's not possible for any system to store all kinds of grass blades beforehand. Obtain grass blade with interactive camera can be an intuitive solution for this problem. We provide a method that can obtain grass blade shape with a depth camera, render large scale grass land efficiently and simulation every single grass blade with individual response on the fly.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
@@ -483,9 +489,23 @@ Grass is a very import element of nature, however create and implement a large s
 Grass, Capture, Render, Simulation, GPU
 \end{IEEEkeywords}}
 
+ %% Uncomment below to include a teaser figure.
+ %% Note: No figures other than the optional teaser are permitted on title page.
+
 
 % make the title area
+%\maketitle
+
+\twocolumn[{%
+\renewcommand\twocolumn[1][]{#1}%
 \maketitle
+\begin{center}
+    \centering
+    \includegraphics[width=0.95\textwidth,height=5cm]{figs/largescene.jpg}
+    \captionof{figure}{Test scene}
+\end{center}%
+}]
+
 
 
 % To allow for easy dual compilation without having to reenter the
@@ -522,7 +542,7 @@ Grass, Capture, Render, Simulation, GPU
 % is to refer to the section immediately after \section in the above as
 % \IEEEraisesectionheading puts \section within a raised box.
 
-
+When 
 
 
 % The very first letter is a 2 line initial drop letter followed
