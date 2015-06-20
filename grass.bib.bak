@@ -1,0 +1,10 @@
+@inproceedings{reeves1985approximate,
+  title={Approximate and probabilistic algorithms for shading and rendering structured particle systems},
+  author={Reeves, William T and Blau, Ricki},
+  booktitle={ACM Siggraph Computer Graphics},
+  volume={19},
+  number={3},
+  pages={313--322},
+  year={1985},
+  organization={ACM}
+}

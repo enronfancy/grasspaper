@@ -542,45 +542,23 @@ Grass, Capture, Render, Simulation, GPU
 % is to refer to the section immediately after \section in the above as
 % \IEEEraisesectionheading puts \section within a raised box.
 
-When an object move through a grass land, every grass blade on the path is pushed aside or run over, and recovers afterward. Individual responses from every single grass blade greatly improve the user experience and increase scene fidelity. With the development of virtual reality(VR) devices and applications, human-computer interaction is paid more attention than ever. Cameras are deployed extensively in recent years, providing more possibility for VR applications. Depth cameras are especially valued since they are able to provide depth information of any scene, which makes it much easier to rebuild any object or scene.
+\IEEEPARstart{W}{hen} an object move through a grass land, every grass blade on the path is pushed aside or run over, and recovers afterward. Individual responses from every single grass blade greatly improve the user experience and increase scene fidelity. With the development of virtual reality(VR) devices and applications, human-computer interaction is paid more attention than ever. Cameras are deployed extensively in recent years, providing more possibility for VR applications. Depth cameras are especially valued since they are able to provide depth information of any scene, which makes it much easier to rebuild any object or scene.\\
 
+We intend to build a system which is able to obtain grass blade from camera, refine grass blade shape and use it in the large scale grassland scene with high rendering quality as well as realistic simulation response to collision. With a depth camera, we are able to capture grass blade shape instantly instead of using a small number of preset shapes.\\
 
-% The very first letter is a 2 line initial drop letter followed
-% by the rest of the first word in caps (small caps for compsoc).
-%
-% form to use if the first word consists of a single letter:
-% \IEEEPARstart{A}{demo} file is ....
-%
-% form to use if you need the single drop letter followed by
-% normal text (unknown if ever used by IEEE):
-% \IEEEPARstart{A}{}demo file is ....
-%
-% Some journals put the first two words in caps:
-% \IEEEPARstart{T}{his demo} file is ....
-%
-% Here we have the typical use of a "T" for an initial drop letter
-% and "HIS" in caps to complete the first word.
-\IEEEPARstart{T}{his} demo file is intended to serve as a ``starter file''
-for IEEE Computer Society journal papers produced under \LaTeX\ using
-IEEEtran.cls version 1.8a and later.
-% You must have at least 2 lines in the paragraph with the drop letter
-% (should never be an issue)
-I wish you the best of success.
+In order to achieve real-time performance of rendering and simulation, every grass blade is modeled as a curve with no more than $64$ knots. We expand this curve to a triangle strip in the course of rendering. In our system we usually choose $16$ as the number of knots for a single curve to guarantee performance. Thus we have to refine the grass shape we capture from camera, and extract the curve which could best describe the grass blade, and calculate the expansion width for each knot in the curve.\\
 
-\hfill mds
+Our system is designed to render and simulate a very large scale grassland in which every single grass blade has individual and vivid response to collision. Therefore we apply GPU-based instancing to lower the requirements for memory and bandwidth, and only pay simulation costs when needed. Meanwhile, this is a tile-based rendering and simulation system, no per-tile data is store unless simulation for the tile is required. We implement the method introduced by Han et al.\cite{han2012real} to simulate our grass blade and adopt the moethod introduced by Fan et al.\cite{fan2015simulation} to do tile management.\\
 
-\hfill September 17, 2014
-
-\subsection{Subsection Heading Here}
-Subsection text here.
+Our main contribution is to capture grass blade shape with depth camera, shape refinement according to our simulation algorithm, and large scale grass land rendering as well as simulation with high fidelity.
 
 % needed in second column of first page if using \IEEEpubid
 %\IEEEpubidadjcol
 
-\subsubsection{Subsubsection Heading Here}
-Subsubsection text here.
-
 \section{Related Work}
+The most challenging part of grass modeling, rendering and simulation is caused by extremely large quantity. William Reeves and Ricki Blau\cite{reeves1985approximate} addressed those challenges in 1985.
+
+
 
 \section{Algorithm Overview}
 
@@ -663,13 +641,17 @@ The authors would like to thank...
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
-\begin{thebibliography}{1}
-
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
-
-\end{thebibliography}
+%\begin{thebibliography}{1}
+%
+%\bibitem{IEEEhowto:kopka}
+%H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+%  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+%\bibitem{Reeves1985}
+%Reeves W T, Blau R. Approximate and probabilistic algorithms for shading and rendering structured particle systems[C]//ACM Siggraph Computer Graphics. ACM, 1985, 19(3): 313-322.
+%
+%\end{thebibliography}
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,grass}
 
 % biography section
 %
