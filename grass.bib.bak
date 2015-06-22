@@ -8,3 +8,94 @@
   year={1985},
   organization={ACM}
 }
+
+@article{han2012real,
+  title={Real-time hair simulation with efficient hair style preservation},
+  crossref = {vriphys12-proc},
+  pages = {45-51},
+  author={Han, Dongsoo and Harada, Takahiro},
+  year={2012},
+  publisher={The Eurographics Association}
+}
+
+@inproceedings{fan2015simulation,
+  title={Simulation and rendering for millions of grass blades},
+  author={Fan, Zengzhi and Li, Hongwei and Hillesland, Karl and Sheng, Bin},
+  booktitle={Proceedings of the 19th Symposium on Interactive 3D Graphics and Games},
+  pages={55--60},
+  year={2015},
+  organization={ACM}
+}
+
+@article{chai2012single,
+  title={Single-view hair modeling for portrait manipulation},
+  author={Chai, Menglei and Wang, Lvdi and Weng, Yanlin and Yu, Yizhou and Guo, Baining and Zhou, Kun},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={31},
+  number={4},
+  pages={116},
+  year={2012},
+  publisher={ACM}
+}
+
+@article{chai2013dynamic,
+  title={Dynamic hair manipulation in images and videos},
+  author={Chai, Menglei and Wang, Lvdi and Weng, Yanlin and Jin, Xiaogang and Zhou, Kun},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={32},
+  number={4},
+  pages={75},
+  year={2013},
+  publisher={ACM}
+}
+
+@article{luo2013structure,
+  title={Structure-aware hair capture},
+  author={Luo, Linjie and Li, Hao and Rusinkiewicz, Szymon},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={32},
+  number={4},
+  pages={76},
+  year={2013},
+  publisher={ACM}
+}
+
+@article{hu2014robust,
+  title={Robust hair capture using simulated examples},
+  author={Hu, Liwen and Ma, Chongyang and Luo, Linjie and Li, Hao},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={33},
+  number={4},
+  pages={126},
+  year={2014},
+  publisher={ACM}
+}
+
+@article{hu2014capturing,
+  title={Capturing braided hairstyles},
+  author={Hu, Liwen and Ma, Chongyang and Luo, Linjie and Wei, Li-Yi and Li, Hao},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={33},
+  number={6},
+  pages={225},
+  year={2014},
+  publisher={ACM}
+}
+
+@article{xu2014dynamic,
+  title={Dynamic hair capture using spacetime optimization},
+  author={Xu, Zexiang and Wu, Hsiang-Tao and Wang, Lvdi and Zheng, Changxi and Tong, Xin and Qi, Yue},
+  journal={To appear in ACM TOG},
+  volume={33},
+  pages={6},
+  year={2014}
+}
+
+@inproceedings{guerraz2003procedural,
+  title={A procedural approach to animate interactive natural sceneries},
+  author={Guerraz, Sylvain and Perbet, Frank and Raulo, David and Faure, Fran{\c{c}}ois and Cani, Marie-Paule},
+  booktitle={Computer Animation and Social Agents, 2003. 16th International Conference on},
+  pages={73--78},
+  year={2003},
+  organization={IEEE}
+}

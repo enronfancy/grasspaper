@@ -2,10 +2,14 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: grass.aux
 The style file: IEEEtran.bst
 Database file #1: IEEEabrv.bib
 Database file #2: grass.bib
+A bad cross reference---entry "han2012real"
+refers to entry "vriphys12-proc", which doesn't exist
+Warning--I didn't find a database entry for "vriphys12-proc"
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty journal in han2012real
+Warning--empty journal in hempe2013generation
 
 Done.
-(There was 1 warning)
+(There was 1 error message)

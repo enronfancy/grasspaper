@@ -548,20 +548,19 @@ We intend to build a system which is able to obtain grass blade from camera, ref
 
 In order to achieve real-time performance of rendering and simulation, every grass blade is modeled as a curve with no more than $64$ knots. We expand this curve to a triangle strip in the course of rendering. In our system we usually choose $16$ as the number of knots for a single curve to guarantee performance. Thus we have to refine the grass shape we capture from camera, and extract the curve which could best describe the grass blade, and calculate the expansion width for each knot in the curve.\\
 
-Our system is designed to render and simulate a very large scale grassland in which every single grass blade has individual and vivid response to collision. Therefore we apply GPU-based instancing to lower the requirements for memory and bandwidth, and only pay simulation costs when needed. Meanwhile, this is a tile-based rendering and simulation system, no per-tile data is store unless simulation for the tile is required. We implement the method introduced by Han et al.[] to simulate our grass blade and adopt the moethod introduced by Fan et al.[] to do tile management.\\
+Our system is designed to render and simulate a very large scale grassland in which every single grass blade has individual and vivid response to collision. Therefore we apply GPU-based instancing to lower the requirements for memory and bandwidth, and only pay simulation costs when needed. Meanwhile, this is a tile-based rendering and simulation system, no per-tile data is store unless simulation for the tile is required. We implement the method introduced by Han et al.\cite{han2012real} to simulate our grass blade and adopt the moethod introduced by Fan et al.\cite{fan2015simulation} to do tile management.\\
 
 Our main contribution is to capture grass blade shape with depth camera, shape refinement according to our simulation algorithm, and large scale grass land rendering as well as simulation with high fidelity.
-
-\subsection{Subsection Heading Here}
-Subsection text here.
 
 % needed in second column of first page if using \IEEEpubid
 %\IEEEpubidadjcol
 
-\subsubsection{Subsubsection Heading Here}
-Subsubsection text here.
-
 \section{Related Work}
+  The most challenging part of grass modeling, rendering and simulation is caused by extremely large quantity. William Reeves and Ricki Blau\cite{reeves1985approximate} addressed those challenges in 1985.
+
+Capturing grass blade with camera has not been explored much, however plenty of researches about hair capture have been conducted. There are some similarities between hair and grass blade for their shapes and movement features. Chai et al.\cite{chai2012single} uses single image to do hair modeling, they capture hair style from image and are able to render origin hair style at different angle, with different hair materials and change hair style . Afterwards, they extends their work through user's high-level knowledge to get more accurate hair that matches image and is physically real at the same time. By doing it they are able to finish dynamic hair simulation and interactive hair style editing, which make it possible to apply this hair manipulation in video\cite{chai2013dynamic}. A structure-aware hair capture method\cite{luo2013structure} was introduced in 2013, they adopt a method to generate hair strand segments, set up a connection graph to guarantee hair growth to areas with missed geometry information and connect hair strands with consistent curvature. A method to capture hair using simulated examples was introduced by Hu et al.\cite{hu2014robust}, 
+
+
 
 \section{Algorithm Overview}
 
@@ -644,13 +643,17 @@ The authors would like to thank...
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
-\begin{thebibliography}{1}
-
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
-
-\end{thebibliography}
+%\begin{thebibliography}{1}
+%
+%\bibitem{IEEEhowto:kopka}
+%H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+%  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+%\bibitem{Reeves1985}
+%Reeves W T, Blau R. Approximate and probabilistic algorithms for shading and rendering structured particle systems[C]//ACM Siggraph Computer Graphics. ACM, 1985, 19(3): 313-322.
+%
+%\end{thebibliography}
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,grass}
 
 % biography section
 %
