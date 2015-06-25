@@ -60,6 +60,26 @@ L.~Hu, C.~Ma, L.~Luo, and H.~Li, ``Robust hair capture using simulated
 L.~Hu, C.~Ma, L.~Luo, L.-Y. Wei, and H.~Li, ``Capturing braided hairstyles,''
   \emph{ACM Transactions on Graphics (TOG)}, vol.~33, no.~6, p. 225, 2014.
 
+\bibitem{quan2006image}
+L.~Quan, P.~Tan, G.~Zeng, L.~Yuan, J.~Wang, and S.~B. Kang, ``Image-based plant
+  modeling,'' in \emph{ACM Transactions on Graphics (TOG)}, vol.~25,
+  no.~3.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2006, pp. 599--604.
+
+\bibitem{tan2007image}
+P.~Tan, G.~Zeng, J.~Wang, S.~B. Kang, and L.~Quan, ``Image-based tree
+  modeling,'' in \emph{ACM Transactions on Graphics (TOG)}, vol.~26,
+  no.~3.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2007, p.~87.
+
+\bibitem{tan2008single}
+P.~Tan, T.~Fang, J.~Xiao, P.~Zhao, and L.~Quan, ``Single image tree modeling,''
+  \emph{ACM Transactions on Graphics (TOG)}, vol.~27, no.~5, p. 108, 2008.
+
+\bibitem{yan2014flower}
+F.~Yan, M.~Gong, D.~Cohen-Or, O.~Deussen, and B.~Chen, ``Flower reconstruction
+  from a single photo,'' in \emph{Computer Graphics Forum}, vol.~33,
+  no.~2.\hskip 1em plus 0.5em minus 0.4em\relax Wiley Online Library, 2014, pp.
+  439--447.
+
 \bibitem{guerraz2003procedural}
 S.~Guerraz, F.~Perbet, D.~Raulo, F.~Faure, and M.-P. Cani, ``A procedural
   approach to animate interactive natural sceneries,'' in \emph{Computer
@@ -75,5 +95,14 @@ K.~Chen and H.~Johan, ``Real-time continuum grass,'' in \emph{Virtual Reality
 N.~Hempe, J.~Rossmann, and B.~Sondermann, ``Generation and rendering of
   interactive ground vegetation for real-time testing and validation of
   computer vision algorithms,'' 2013.
+
+\bibitem{neubert2007approximate}
+B.~Neubert, T.~Franken, and O.~Deussen, ``Approximate image-based tree-modeling
+  using particle flows,'' \emph{ACM Transactions on Graphics (TOG)}, vol.~26,
+  no.~3, p.~88, 2007.
+
+\bibitem{sousa2007vegetation}
+T.~Sousa, ``Vegetation procedural animation and shading in crysis,'' \emph{GPU
+  Gems}, vol.~3, pp. 373--385, 2007.
 
 \end{thebibliography}

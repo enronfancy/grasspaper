@@ -503,6 +503,7 @@ Grass, Capture, Render, Simulation, GPU
     \centering
     \includegraphics[width=0.95\textwidth,height=5cm]{figs/largescene.jpg}
     \captionof{figure}{Test scene}
+    \label{fig:teaser}
 \end{center}%
 }]
 
@@ -556,17 +557,73 @@ Our main contribution is to capture grass blade shape with depth camera, shape r
 %\IEEEpubidadjcol
 
 \section{Related Work}
-  The most challenging part of grass modeling, rendering and simulation is caused by extremely large quantity. William Reeves and Ricki Blau\cite{reeves1985approximate} addressed those challenges in 1985.
+The most challenging part of grass modeling, rendering and simulation is caused by extremely large quantity. William Reeves and Ricki Blau\cite{reeves1985approximate} addressed those challenges in 1985.\\
 
-Capturing grass blade with camera has not been explored much, however plenty of researches about hair capture have been conducted. There are some similarities between hair and grass blade for their shapes and movement features. Chai et al.\cite{chai2012single} uses single image to do hair modeling, they capture hair style from image and are able to render origin hair style at different angle, with different hair materials and change hair style . Afterwards, they extends their work through user's high-level knowledge to get more accurate hair that matches image and is physically real at the same time. By doing it they are able to finish dynamic hair simulation and interactive hair style editing, which make it possible to apply this hair manipulation in video\cite{chai2013dynamic}. A structure-aware hair capture method\cite{luo2013structure} was introduced in 2013, they adopt a method to generate hair strand segments, set up a connection graph to guarantee hair growth to areas with missed geometry information and connect hair strands with consistent curvature. A method to capture hair using simulated examples was introduced by Hu et al.\cite{hu2014robust}, 
+Capturing grass blade with camera has not been explored much, however plenty of researches about hair capture have been conducted. There are some similarities between hair and grass blade for their shapes and movement features. Chai et al.\cite{chai2012single} uses single image to do hair modeling, they capture hair style from image and are able to render origin hair style at different angle, with different hair materials and change hair style . Afterwards, they extends their work through user's high-level knowledge to get more accurate hair that matches image and is physically real at the same time. By doing it they are able to finish dynamic hair simulation and interactive hair style editing, which make it possible to apply this hair manipulation in video\cite{chai2013dynamic}. A structure-aware hair capture method\cite{luo2013structure} was introduced in 2013, they adopt a method to generate hair strand segments, set up a connection graph to guarantee hair growth to areas with missed geometry information and connect hair strands with consistent curvature. A method to capture hair using simulated examples was introduced by Hu et al.\cite{hu2014robust}, they use simulated samples as reference to generate hair, and this method could be applied with unconstrained and constrained hair. They also came up with a method to capture braided hair style\cite{hu2014capturing}. They adopt a data-driven reconstruction and use procedurally generated examples to fit captured hair strands. Xu et al. introduced a space-time optimization method to capture dynamic hair. This method could faithfully capture hair strands' shape as well as spatial details. Long et al.\cite{quan2006image} introduced a method to model plant from a dozen of images. This method can recover plant's shape automatically while relying on user to provide some hints for segmentation. Tan et al.\cite{tan2007image} proposed a method to generate 3D trees from images. They populate tree leaves from segmented source images and use shape patterns of visible branches to predict occluded branches. Tree modeling from single image was introduced afterwards\cite{tan2008single}. Yan et al.\cite{yan2014flower} came up with a method for flower reconstruction from a single image, which uses a cone fitting scheme to maintains flower shape.
+ \\
+
+In previous works, grass is moved aside when interaction between grass and object happens\cite{guerraz2003procedural}. Spring-mass system is also used to model grass blade and simulate grass-object interaction\cite{chen2010real}\cite{hempe2013generation}. We adopt the simulation algorithm introduced by Han et al.\cite{han2012real}. This method treats collision as hard constraint, meanwhile treat length, bending and twisting as soft constraints in the iterative solver for grass-object interaction. We employ the rendering and simulation framework introduced by \cite{fan2015simulation}. With this frame work, we are able to perform collision computation on GPU and do grass blade instancing on the fly.  We implement our capture module on the basis of this framework to obtain more accurate and diverse grass types.\\
 
 
 
 \section{Algorithm Overview}
 
-\section{Blade Capture}
 
-\section{}
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.95\textwidth,height=5cm]{figs/test.jpg}
+    \captionof{figure}{Algorithm overview.}
+    \label{fig:overview}
+\end{figure*}
+
+The overview of our algorithm is shown in Figure.\ref{fig:overview}. We employ a depth camera in our system which is able to obtain a depth image of target plant. According to this depth image, we are able to calculate the contour of grass blade by distance masking method, which is difficult to achieve without depth information. The single grass blade could be partitioned from a cluster of blades by a particle-flow method\cite{neubert2007approximate}.\\
+
+According to contour of grass blade, we generate the skeleton, which is used to describe this blade and is also used in simulation. In vertex shader we expand each knot on the skeleton to form the blade. Expansion widths are calculated from blade's contour and smoothed before rendering.\\
+
+For skeleton captured from camera, we design an refining algorithm to do simplification. This process is similar to level-of-detail(LOD). Since skeleton knots number is restricted by extremely large amount of grass blades, this refining algorithm could reduce skeleton knots number from over one hundred to $32$, $16$ or even less, according to knots' movement similarity.\\
+
+We adopt the GPU instancing scheme used in \cite{fan2015simulation}. We pre-generate a list of grass blade called grass patch. Grass scene is divided into a grid of tiles. Grass blades in each tile are specific number of continuous blades fetched from grass patch. Starting position in grass patch for each tile is calculated by tile's position in the scene. Blade's skeleton is expanded to triangles before rendering. Phong shading model is used in grass blade rendering for the sake of high performance. Subsurface scattering effects is also used in our system to increase fidelity\cite{sousa2007vegetation}. Tile management guarantee per-blade memory is allocated only when simulation is needed.  \\
+
+\section{Blade Capture}\label{sec:capture}
+we aim to capture grass blade without manual operations and use capture result in the rendering and simulation system immediately after capturing. Skeleton knots number limits the detail level of our grass blade, however it also requires efficient refining algorithm to convert captured skeleton into appropriate blade model in our system. Motivated by other hair and plant capture methods, we adopt a depth camera to capture grass blade. Depth cameras are deployed in variety of applications and becoming prevailing more than ever, for its advantage to recover shapes and capture movements. With depth camera, we manage to capture grass blade and mask non-grass object on the fly.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.45\textwidth,height=5cm]{figs/test2.jpg}
+    \captionof{figure}{(a)Depth image and (b)extracted contour}
+    \label{fig:depthimage}
+\end{figure}
+
+Figure\ref{fig:depthimage} shows the depth image of a cluster of grass blades and its extracted contour. We just use depth information to mask objects that exceed specified depth to get a blob of blades and then extract edge of the blob. Also canny edge detection can be used to extract contour, however depth value, instead of gray is used to do calculation.
+
+\subsection{Single Blade Partition}
+
+Individual grass blades are partitioned by a particle-flow method\cite{neubert2007approximate}. After getting the contour of grass blades, the center of the contour can be easily calculated. Then the distance between any point on the contour and center point can be measured. Local minimum points of point-distance function imply the intersection points between adjacent blades. Boundary between two intersection points is contour of a single blade. Figure.\ref{fig:partition} shows the partition result projected in 2D plane.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.45\textwidth,height=5cm]{figs/test2.jpg}
+    \captionof{figure}{Single blade partition: Given the (a)contour of a blade cluster,(b)calculate the center point and use particle-flow method to partition each single blade.}
+    \label{fig:partition}
+\end{figure}
+
+\subsection{Skeleton and Expansion Width Calculation}
+Given the contour of single blade, we could calculate the blade skeleton. According to our observation on plenty kinds of grass blade ,we suppose that captured blade is symmetrical. Then we could calculate skeleton point by matching symmetrical points on contour. Figure.\ref{fig:skeleton} present skeleton calculation according to blade contour. Expansion width for each point of skeleton could also be calculated by symmetrical points' distance.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.45\textwidth,height=5cm]{figs/test2.jpg}
+    \captionof{figure}{Skeleton calculation by match symmetrical points on contour.}
+    \label{fig:skeleton}
+\end{figure}
+
+\section{Skeleton Refining}\label{sec:Refining}
+Having the blade skeleton from contour, it can't be used in our rendering and simulation system for its large number of vertices. Therefore we come up with a skeleton refining method to reduce vertices amount according to vertices' movement similarity. 
+
+In our system, we define any two vertices' movement similarity by the distance between them and their movement trends. For any two vertices, the smaller the distance between them is, the more similar they are. And for any two vertices, we could calculate the distance between them at any time. We could acquire the distance of two vertices every a few millisecond 
+
+\section{Rendering and Simulation}\label{sec:render}
+
 
 \section{Conclusion}
 The conclusion goes here.
@@ -590,14 +647,14 @@ The conclusion goes here.
 %
 
 
-\appendices
-\section{Proof of the First Zonklar Equation}
-Appendix one text goes here.
-
-% you can choose not to have a title for an appendix
-% if you want by leaving the argument blank
-\section{}
-Appendix two text goes here.
+%\appendices
+%\section{Proof of the First Zonklar Equation}
+%Appendix one text goes here.
+%
+%% you can choose not to have a title for an appendix
+%% if you want by leaving the argument blank
+%\section{}
+%Appendix two text goes here.
 
 
 % use section* for acknowledgment

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.9)  22 JUN 2015 17:52
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.15)  24 JUN 2015 22:51
 entering extended mode
-**C:/Users/BeYourself/Desktop/capture/IEEEtran/grass.tex
-(C:/Users/BeYourself/Desktop/capture/IEEEtran/grass.tex
+**C:/Users/Enronfancy/Desktop/grasspaper/grass.tex
+(C:/Users/Enronfancy/Desktop/grasspaper/grass.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
-(C:\Users\BeYourself\Desktop\capture\IEEEtran\IEEEtran.cls
+(C:\Users\Enronfancy\Desktop\grasspaper\IEEEtran.cls
 Document Class: IEEEtran 2014/09/17 V1.8a by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -185,7 +185,7 @@ Package: subcaption 2011/10/30 v1.1c Sub-captions (AR)
 \c@subfigure=\count96
 \c@subtable=\count97
 )
-(C:\Users\BeYourself\Desktop\capture\IEEEtran\grass.aux)
+(C:\Users\Enronfancy\Desktop\grasspaper\grass.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 380.
 LaTeX Font Info:    ... okay on input line 380.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 380.
@@ -216,115 +216,209 @@ LaTeX Font Info:    ... okay on input line 380.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 507.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 508.
 
  (C:\CTEX\MiKTeX\tex\latex\psnfss\ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 507.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 508.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8.03> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 507.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 508.
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 50
-7.
+8.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11.04124> on input line 507.
+(Font)              <11.04124> on input line 508.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.72884> on input line 507.
+(Font)              <7.72884> on input line 508.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.52061> on input line 507.
-LaTeX Font Info:    Try loading font information for U+pzd on input line 507.
+(Font)              <5.52061> on input line 508.
+LaTeX Font Info:    Try loading font information for U+pzd on input line 508.
 
 (C:\CTEX\MiKTeX\tex\latex\psnfss\upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 507.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 508.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8.03> on input line 507.
+(Font)              <8.03> on input line 508.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.62097> on input line 507.
+(Font)              <5.62097> on input line 508.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.015> on input line 507.
+(Font)              <4.015> on input line 508.
 
 <figs/largescene.jpg, id=1, 1274.7625pt x 501.875pt>
 File: figs/largescene.jpg Graphic file (type jpg)
  <use figs/largescene.jpg>
-Package pdftex.def Info: figs/largescene.jpg used on input line 507.
+Package pdftex.def Info: figs/largescene.jpg used on input line 508.
 (pdftex.def)             Requested size: 492.03969pt x 142.26239pt.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 536.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 537.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <11.04124> not available
 
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 536.
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 537.
 
-Underfull \hbox (badness 2221) in paragraph at lines 545--546
+Underfull \hbox (badness 2221) in paragraph at lines 546--547
 \OT1/ppl/m/n/9.53561 re-al-i-ty(VR) de-vices and ap-pli-ca-tion-s, human-comput
 er
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 545--546
+Underfull \hbox (badness 10000) in paragraph at lines 546--547
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 547--548
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 549
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 550
 .
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.53561> on input line 549.
+(Font)              <9.53561> on input line 550.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6.6749> on input line 549.
+(Font)              <6.6749> on input line 550.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.7678> on input line 549.
+(Font)              <4.7678> on input line 550.
 
-Underfull \hbox (badness 10000) in paragraph at lines 549--550
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--552
+Underfull \hbox (badness 10000) in paragraph at lines 552--553
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 560--561
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 560
+LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 561
 .
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.02625> on input line 560.
+(Font)              <7.02625> on input line 561.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.91833> on input line 560.
+(Font)              <4.91833> on input line 561.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <3.51312> on input line 560.
+(Font)              <3.51312> on input line 561.
  [1{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
 
 
- <C:/Users/BeYourself/Desktop/capture/IEEEtran/figs/largescene.jpg>]
-(C:\Users\BeYourself\Desktop\capture\IEEEtran\grass.bbl) [2]
-(C:\Users\BeYourself\Desktop\capture\IEEEtran\grass.aux) ) 
+ <C:/Users/Enronfancy/Desktop/grasspaper/figs/largescene.jpg>]
+Underfull \hbox (badness 1789) in paragraph at lines 562--564
+[]\OT1/ppl/m/n/9.53561 Capturing grass blade with cam-er-a has not been
+ []
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 562--564
+\OT1/ppl/m/n/9.53561 be-tween hair and grass blade for their shapes and
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 562--564
+\OT1/ppl/m/n/9.53561 with d-if-fer-en-t hair ma-te-ri-al-s and change hair styl
+e .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 562--564
+
+ []
+
+
+Underfull \hbox (badness 3557) in paragraph at lines 565--566
+[]\OT1/ppl/m/n/9.53561 In pre-vi-ous work-s, grass is moved a-side when
+ []
+
+
+Underfull \hbox (badness 4621) in paragraph at lines 565--566
+\OT1/ppl/m/n/9.53561 in-ter-ac-tion be-tween grass and ob-jec-t hap-pen-s [13].
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
+
+ []
+
+<figs/test.jpg, id=12, 978.65625pt x 376.40625pt>
+File: figs/test.jpg Graphic file (type jpg)
+ <use figs/test.jpg>
+Package pdftex.def Info: figs/test.jpg used on input line 574.
+(pdftex.def)             Requested size: 492.04475pt x 142.26622pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--580
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 581--582
+
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 583--584
+\OT1/ppl/m/n/9.53561 re-fin-ing al-go-rith-m to do sim-pli-fi-ca-tion. This pro
+-cess
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--584
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
+
+ []
+
+<figs/test2.jpg, id=13, 752.8125pt x 526.96875pt>
+File: figs/test2.jpg Graphic file (type jpg)
+ <use figs/test2.jpg>
+Package pdftex.def Info: figs/test2.jpg used on input line 592.
+(pdftex.def)             Requested size: 233.0708pt x 142.26738pt.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 599.
+ [2]
+File: figs/test2.jpg Graphic file (type jpg)
+
+<use figs/test2.jpg>
+Package pdftex.def Info: figs/test2.jpg used on input line 605.
+(pdftex.def)             Requested size: 233.0708pt x 142.26738pt.
+
+Underfull \vbox (badness 1881) has occurred while \output is active []
+
+File: figs/test2.jpg Graphic file (type jpg)
+
+<use figs/test2.jpg>
+Package pdftex.def Info: figs/test2.jpg used on input line 615.
+(pdftex.def)             Requested size: 233.0708pt x 142.26738pt.
+ (C:\Users\Enronfancy\Desktop\grasspaper\grass.bbl [3 <C:/Users/Enronfancy/Desk
+top/grasspaper/figs/test.jpg> <C:/Users/Enronfancy/Desktop/grasspaper/figs/test
+2.jpg>]) [4]
+(C:\Users\Enronfancy\Desktop\grasspaper\grass.aux) ) 
 Here is how much of TeX's memory you used:
- 3229 strings out of 495354
- 53505 string characters out of 3183860
- 115807 words of memory out of 3000000
- 6394 multiletter control sequences out of 15000+200000
- 45019 words of font info for 93 fonts, out of 3000000 for 9000
+ 3257 strings out of 495354
+ 53885 string characters out of 3183858
+ 118807 words of memory out of 3000000
+ 6419 multiletter control sequences out of 15000+200000
+ 46652 words of font info for 95 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,8n,38p,1739b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/CTEX/MiKTeX/fonts
-/enc/dvips/fontname/8r.enc}<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10
-.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/CTEX/MiKTeX/fonts/
-type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.
-pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/CTEX/MiKTeX/fonts/t
-ype1/urw/palatino/uplri8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb
->
-Output written on grass.pdf (2 pages, 977107 bytes).
+ 36i,8n,38p,2387b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/CTEX/MiKTeX/fonts/enc/d
+vips/fontname/8r.enc}<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/
+urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb><C
+:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/u
+rw/palatino/uplri8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on grass.pdf (4 pages, 1007937 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
+ 47 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

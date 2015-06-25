@@ -99,3 +99,82 @@
   year={2003},
   organization={IEEE}
 }
+
+@article{hempe2013generation,
+  title={Generation and rendering of interactive ground vegetation for real-time testing and validation of computer vision algorithms},
+  author={Hempe, Nico and Rossmann, J{\"u}rgen and Sondermann, Bj{\"o}rn},
+  year={2013}
+}
+
+@inproceedings{chen2010real,
+  title={Real-time continuum grass},
+  author={Chen, Kan and Johan, Henry},
+  booktitle={Virtual Reality Conference (VR), 2010 IEEE},
+  pages={227--234},
+  year={2010},
+  organization={IEEE}
+}
+
+@article{neubert2007approximate,
+  title={Approximate image-based tree-modeling using particle flows},
+  author={Neubert, Boris and Franken, Thomas and Deussen, Oliver},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={26},
+  number={3},
+  pages={88},
+  year={2007},
+  publisher={ACM}
+}
+
+@article{sousa2007vegetation,
+  title={Vegetation procedural animation and shading in crysis},
+  author={Sousa, Tiago},
+  journal={GPU Gems},
+  volume={3},
+  pages={373--385},
+  year={2007}
+}
+
+@inproceedings{quan2006image,
+  title={Image-based plant modeling},
+  author={Quan, Long and Tan, Ping and Zeng, Gang and Yuan, Lu and Wang, Jingdong and Kang, Sing Bing},
+  booktitle={ACM Transactions on Graphics (TOG)},
+  volume={25},
+  number={3},
+  pages={599--604},
+  year={2006},
+  organization={ACM}
+}
+
+@inproceedings{tan2007image,
+  title={Image-based tree modeling},
+  author={Tan, Ping and Zeng, Gang and Wang, Jingdong and Kang, Sing Bing and Quan, Long},
+  booktitle={ACM Transactions on Graphics (TOG)},
+  volume={26},
+  number={3},
+  pages={87},
+  year={2007},
+  organization={ACM}
+}
+
+@article{tan2008single,
+  title={Single image tree modeling},
+  author={Tan, Ping and Fang, Tian and Xiao, Jianxiong and Zhao, Peng and Quan, Long},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={27},
+  number={5},
+  pages={108},
+  year={2008},
+  publisher={ACM}
+}
+
+@inproceedings{yan2014flower,
+  title={Flower reconstruction from a single photo},
+  author={Yan, Feilong and Gong, Minglun and Cohen-Or, Daniel and Deussen, Oliver and Chen, Baoquan},
+  booktitle={Computer Graphics Forum},
+  volume={33},
+  number={2},
+  pages={439--447},
+  year={2014},
+  organization={Wiley Online Library}
+}
