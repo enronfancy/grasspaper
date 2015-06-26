@@ -372,6 +372,10 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
 
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
@@ -501,7 +505,7 @@ Grass, Capture, Render, Simulation, GPU
 \maketitle
 \begin{center}
     \centering
-    \includegraphics[width=0.95\textwidth,height=5cm]{figs/largescene.jpg}
+    \includegraphics[width=0.95\textwidth,height=5cm]{figs/test.jpg}
     \captionof{figure}{Test scene}
     \label{fig:teaser}
 \end{center}%
@@ -585,7 +589,7 @@ For skeleton captured from camera, we design an refining algorithm to do simplif
 We adopt the GPU instancing scheme used in \cite{fan2015simulation}. We pre-generate a list of grass blade called grass patch. Grass scene is divided into a grid of tiles. Grass blades in each tile are specific number of continuous blades fetched from grass patch. Starting position in grass patch for each tile is calculated by tile's position in the scene. Blade's skeleton is expanded to triangles before rendering. Phong shading model is used in grass blade rendering for the sake of high performance. Subsurface scattering effects is also used in our system to increase fidelity\cite{sousa2007vegetation}. Tile management guarantee per-blade memory is allocated only when simulation is needed.  \\
 
 \section{Blade Capture}\label{sec:capture}
-we aim to capture grass blade without manual operations and use capture result in the rendering and simulation system immediately after capturing. Skeleton knots number limits the detail level of our grass blade, however it also requires efficient refining algorithm to convert captured skeleton into appropriate blade model in our system. Motivated by other hair and plant capture methods, we adopt a depth camera to capture grass blade. Depth cameras are deployed in variety of applications and becoming prevailing more than ever, for its advantage to recover shapes and capture movements. With depth camera, we manage to capture grass blade and mask non-grass object on the fly.
+we aim to capture grass blade without manual operations and use capture result in the rendering and simulation system immediately after capturing. Skeleton knots number limits the detail level of our grass blade, however it also requires efficient refining algorithm to convert captured skeleton into appropriate blade model in our system. Motivated by other hair and plant capture methods, we adopt a depth camera to capture grass blade. Depth cameras are deployed in variety of applications and becoming prevailing more than ever, for its advantage to recover shapes and capture movements. With depth camera, we manage to capture grass blade and mask non-grass object on the fly.\\
 
 \begin{figure}
     \centering
@@ -618,14 +622,78 @@ Given the contour of single blade, we could calculate the blade skeleton. Accord
 \end{figure}
 
 \section{Skeleton Refining}\label{sec:Refining}
-Having the blade skeleton from contour, it can't be used in our rendering and simulation system for its large number of vertices. Therefore we come up with a skeleton refining method to reduce vertices amount according to vertices' movement similarity.
+Having the blade skeleton from contour, it can't be used in our rendering and simulation system for its large number of vertices. Therefore we come up with a skeleton refining method to reduce vertices amount according to vertices' movement similarity.\\
 
-In our system, we define any two vertices' movement similarity by the distance between them and their movement trends. For any two vertices, the smaller the distance between them is, the more similar they are. And for any two vertices, we could calculate the distance between them at any time. We could acquire the distance of two vertices every a few millisecond. Then we are able to calculate a series distance data for these two vertices. Variance is usually used to describe data stability. If distance variance is relatively low, it means the distance between two vertices is stable. In another word, this indicate that these two vertices.
+In our system, we define any two vertices' movement similarity by the distance between them and their movement trends. For any two vertices, the smaller the distance between them is, the more similar they are. And for any two vertices, we could calculate the distance between them at any time. We could acquire the distance of two vertices every a few millisecond. Then we are able to calculate a series distance data for these two vertices. Variance is usually used to describe data stability. If distance variance is low, it means the distance between two vertices is stable. In another word, this indicate that these two vertices moves synchronously. We tend to merge vertices that moves similarly and keep vertices that have distinct movement features. Assume we acquire $n$ frames every a few milliseconds, $v_{m}^{n}$ is $m$th vertex at $n$th frame, therefore we introduce movement difference of any two vertices as:
+
+\begin{equation}
+D(v_{1}, v_{2}) = dis(v_{1}, v_{2})\times \mu + var(v_{1}, v_{2}) \times (1-\mu)
+\label{eq:similarityeq}
+\end{equation}
+
+\begin{equation}
+dis(v_{1}, v_{2}) = \dfrac{\sum_{i = 0}^{n}{d(v_{1}^{i}, v_{2}^{i})}}{n}
+\label{eq:distance}
+\end{equation}
+
+\begin{equation}
+var(v_{1}, v_{2}) = (\dfrac{\sum_{i = 0}^{n}{d(v_{1}^{i}, v_{2}^{i})}^{2}}{n} - \dfrac{(\sum_{i = 0}^{n}{d(v_{1}^{i}, v_{2}^{i})})^{2}}{n})
+\label{eq:variance}
+\end{equation}
+
+$dis$ function represents distance factor and $var$ function represents variance factor. $\mu$ is proportion factor for distance and variance, which can be set by user.\\
+
+We use an iterative algorithm to complete this skeleton refining process. After skeleton calculation, we manage to obtain array of skeleton vertices. We design a greedy algorithm to iteratively merge two adjacent vertices, based on the assumption that if two vertices are the most similar then they should be adjacent vertices in the array. Because distance factor is an very important part in similarity definition, and closer vertices always get lower score for distance factor. This algorithm is illustrated as below:
+
+\floatname{algorithm}{Algorithm}
+    \renewcommand{\algorithmicrequire}{\textbf{Input:}}
+    \renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+    \begin{algorithm}
+        \caption{Skeleton Refining}
+        \label{tbl:skeletonrefining}
+        \begin{algorithmic}[1]
+            \State //SkeletonVertices = Calculated from captured result
+            \While{SkeletonVertices.size()  $> m$}
+                \State DifferenceArr = $\emptyset$
+                \For{$v_{i}$ in SkeletonVertices}
+                    \State $d_i = D(v_{i}, v_{i+1})$
+                    \State DifferenceArr.add($d_i$)
+                \EndFor
+                
+                \\
+                \State //Search for minimum $d$ in DifferenceArr
+                \State $ind$ = DifferenceArr.minimum()
+                \State $newV = (v_{i} + v_{i+1}) /2$
+                \\
+                \State //Delete old vertices
+                \State DifferenceArr.delete($i$)
+                \State DifferenceArr.delete($i+1$)
+                \\
+                \State //Insert new vertex at position i
+                \State DifferenceArr.insert($newV$, $i$)
+                
+            \EndWhile
+        \end{algorithmic}
+    \end{algorithm}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.45\textwidth,height=5cm]{figs/test2.jpg}
+    \captionof{figure}{Demonstration of Skeleton refining process with a sequence of grass blade projected to 2D plane.}
+    \label{fig:skeletonrefining}
+\end{figure}
+
+Figure.\ref{fig:skeletonrefining} illustrates a sequence of grass blade with different refining level. Refining level is set by user according to the performance requirement of application and hardware level.
+
 
 \section{Rendering and Simulation}\label{sec:render}
 
 
-\section{Results and Conclusion}
+
+\section{Implementation and Results}
+
+\section{Conclusion}
 The conclusion goes here.
 
 
