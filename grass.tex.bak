@@ -505,7 +505,7 @@ Grass, Capture, Render, Simulation, GPU
 \maketitle
 \begin{center}
     \centering
-    \includegraphics[width=0.95\textwidth,height=5cm]{figs/largescene.jpg}
+    \includegraphics[width=0.95\textwidth,height=5cm]{figs/test.jpg}
     \captionof{figure}{Test scene}
     \label{fig:teaser}
 \end{center}%
@@ -643,18 +643,77 @@ var(v_{1}, v_{2}) = (\dfrac{\sum_{i = 0}^{n}{d(v_{1}^{i}, v_{2}^{i})}^{2}}{n} - 
 
 $dis$ function represents distance factor and $var$ function represents variance factor. $\mu$ is proportion factor for distance and variance, which can be set by user.\\
 
-We use an iterative algorithm to complete this skeleton refining process. After skeleton calculation, we manage to obtain array of skeleton vertices. We design a greedy algorithm to iteratively merge two adjacent vertices, based on 
+We use an iterative algorithm to complete this skeleton refining process. After skeleton calculation, we manage to obtain array of skeleton vertices. We design a greedy algorithm to iteratively merge two adjacent vertices, based on the assumption that if two vertices are the most similar then they should be adjacent vertices in the array. Because distance factor is an very important part in similarity definition, and closer vertices always get lower score for distance factor. This algorithm is illustrated as below:\\
 
+\floatname{algorithm}{Algorithm}
+    \renewcommand{\algorithmicrequire}{\textbf{Input:}}
+    \renewcommand{\algorithmicensure}{\textbf{Output:}}
 
+    \begin{algorithm}
+        \caption{Skeleton Refining}
+        \label{tbl:skeletonrefining}
+        \begin{algorithmic}[1]
+            \State //SkeletonVertices = Calculated from captured result
+            \While{SkeletonVertices.size()  $> m$}
+                \State DifferenceArr = $\emptyset$
+                \For{$v_{i}$ in SkeletonVertices}
+                    \State $d_i = D(v_{i}, v_{i+1})$
+                    \State DifferenceArr.add($d_i$)
+                \EndFor
 
+                \\
+                \State //Search for minimum $d$ in DifferenceArr
+                \State $ind$ = DifferenceArr.minimum()
+                \State $newV = (v_{i} + v_{i+1}) /2$
+                \\
+                \State //Delete old vertices
+                \State DifferenceArr.delete($i$)
+                \State DifferenceArr.delete($i+1$)
+                \\
+                \State //Insert new vertex at position i
+                \State DifferenceArr.insert($newV$, $i$)
+
+            \EndWhile
+        \end{algorithmic}
+    \end{algorithm}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.45\textwidth,height=5cm]{figs/test2.jpg}
+    \captionof{figure}{Demonstration of Skeleton refining process with a sequence of grass blade projected to 2D plane.}
+    \label{fig:skeletonrefining}
+\end{figure}
+
+Figure.\ref{fig:skeletonrefining} illustrates a sequence of grass blade with different refining level. Refining level is set by user according to the performance requirement of application and hardware level.
 
 \section{Rendering and Simulation}\label{sec:render}
+According to our captured grass model and refining result, we pre-generate a list of grass blades with some random scaling.We divide the whole scene into tiles. Those blades in the patch are randomly located in a square which has the same size of grass tile in the scene. Each tile contains a subset of continuous blades in the patch. For each grass tile, its offset in the patch is calculated by tile's position coordinate in the scene. With this instancing scheme, we are able to reduce memory use from about $4$ GB of $4$ M blades to only $24$ MB of for a patch of $16384$ blades. With this patch, we manage to implement a grass land wit rich variance.\\
 
+We draw one line segment as two degenerate triangles and expand each knot of this line segment at runtime according to expansion width captured through the camera. Figure.\ref{fig:expasion} illustrates this expansion process. We employ Phong shading along with subsurface scattering effect\cite{sousa2007vegetation}.\\
 
-\section{Results and Conclusion}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.45\textwidth,height=5cm]{figs/test2.jpg}
+    \captionof{figure}{Blade skeleton expansion.}
+    \label{fig:expasion}
+\end{figure}
+
+In our simulation system, $Bullet$ is used to handle collision between ground and other object. We use the simulation method introduced by \cite{han2012real} and tile management scheme introduced by \cite{fan2015simulation}. This simulation scheme is compatible with procedural animation. We are able to simulate millions of grass blades with real-time performance.
+
+\section{Implementation and Results}
+We implemented our system on a PC with Windows 8.1, Intel i5-4460 CPU running at $3.2$ GHz and AMD Radeon R9-270 graphic card. 4 times multi-sampling anti-aliasing is used in all experiments to guarantee satisfactory effect.
+
+Our system is evaluated with a variety of grass blades and leaves that can be used for large scale grassland. Our capture algorithm can capture grass blade, partition single blade contour, calculate expansion width and finish skeleton refining at interactive performance. This provide the possibility for user to capture any appropriate kind of grass or leaves and use it for large scale grassland rendering and simulation. This is especially useful for virtual-reality or augmented-reality applications where quick reconstruction of grassland with specific grass blade type is needed. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.45\textwidth,height=5cm]{figs/test2.jpg}
+    \captionof{figure}{Blade skeleton expansion.}
+    \label{fig:expasion}
+\end{figure}
+
+\section{Conclusion}
 The conclusion goes here.
-
-
 
 
 
