@@ -505,8 +505,9 @@ Grass, Capture, Render, Simulation, GPU
 \maketitle
 \begin{center}
     \centering
-    \includegraphics[width=0.95\textwidth]{figs/test.jpg}
-    \captionof{figure}{Test scene}
+    \includegraphics[width=1.0\textwidth]{figs/teaser1.jpg}
+    \captionof{figure}{Large scale grassland with our method: (a) grass detail in the scene; (b) front view of large scale grassland; (c)  grass-ball interaction handling in our system; (d) bird's view of test scene.\\\\
+    }
     \label{fig:teaser}
 \end{center}%
 }]
@@ -575,7 +576,7 @@ In previous works, grass is moved aside when interaction between grass and objec
 
 \begin{figure*}
     \centering
-    \includegraphics[width=0.95\textwidth,height=5cm]{figs/test.jpg}
+    \includegraphics[width=1.0\textwidth]{figs/test.jpg}
     \captionof{figure}{Algorithm overview.}
     \label{fig:overview}
 \end{figure*}
@@ -593,7 +594,7 @@ we aim to capture grass blade without manual operations and use capture result i
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.45\textwidth,height=5cm]{figs/test2.jpg}
+    \includegraphics[width=0.48\textwidth]{figs/depth_contour.jpg}
     \captionof{figure}{(a)Depth image and (b)extracted contour}
     \label{fig:depthimage}
 \end{figure}
@@ -606,7 +607,7 @@ Individual grass blades are partitioned by a particle-flow method\cite{neubert20
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.45\textwidth,height=5cm]{figs/test2.jpg}
+    \includegraphics[width=0.48\textwidth]{figs/contour_partition.jpg}
     \captionof{figure}{Single blade partition: Given the (a)contour of a blade cluster,(b)calculate the center point and use particle-flow method to partition each single blade.}
     \label{fig:partition}
 \end{figure}
@@ -616,8 +617,8 @@ Given the contour of single blade, we could calculate the blade skeleton. Accord
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.45\textwidth,height=5cm]{figs/test2.jpg}
-    \captionof{figure}{Skeleton calculation by match symmetrical points on contour.}
+    \includegraphics[width=0.45\textwidth]{figs/skeletoncal.jpg}
+    \captionof{figure}{Skeleton calculation by match symmetrical points on contour.(a) capture single blade contour points, points index increases from bottom left to bottom right;(b) Matching symmetrical points in the contour.}
     \label{fig:skeleton}
 \end{figure}
 
@@ -680,7 +681,7 @@ We use an iterative algorithm to complete this skeleton refining process. After 
 \begin{figure}
     \centering
     \includegraphics[width=0.45\textwidth,height=5cm]{figs/test2.jpg}
-    \captionof{figure}{Demonstration of Skeleton refining process with a sequence of grass blade projected to 2D plane.}
+    \captionof{figure}{Skeleton refining process with a sequence of grass blade projected to 2D plane.}
     \label{fig:skeletonrefining}
 \end{figure}
 
@@ -693,8 +694,8 @@ We draw one line segment as two degenerate triangles and expand each knot of thi
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.45\textwidth,height=5cm]{figs/test2.jpg}
-    \captionof{figure}{Blade skeleton expansion.}
+    \includegraphics[width=0.48\textwidth]{figs/expansion.jpg}
+    \captionof{figure}{Blade skeleton expansion:(a) Part of blade skeleton presented by overlapping vertices; (b) Expanded triangles from blade skeleton.}
     \label{fig:expasion}
 \end{figure}
 
@@ -717,8 +718,8 @@ Our system is evaluated with a variety of grass blades and leaves that can be us
 In Figure.\ref{fig:results}(a), (b), (c), (d). To be done.\\
 
 
-\textbf{Limitations.} Restricted by vertex amount of grass blade, our method has some limitations. First, small vertex amount is not enough to model jagged blades or leaves. Sharp variation in shape definitely need more vertices to remain such features. However, vertex amount is severely restricted by performance requirements, we need to balance vertex amount and performance at the same time. Secondly, since we choose to do instancing before rendering and expand grass blade at runtime, moreover our skeleton calculation by matching points will run into difficulties when dealing with asymmetric grass blades or leaves. Thirdly, the center point calculation of a grass blade cluster requires appropriate pose for camera and blade cluster, causing some accuracy problem if the poses are not proper.
- 
+\textbf{Limitations.} Restricted by vertex amount of grass blade, our method has some limitations. First, small vertex amount is not enough to model jagged blades or leaves. Sharp variation in shape definitely need more vertices to remain such features. However, vertex amount is severely restricted by performance requirements, we need to balance vertex amount and performance at the same time. Secondly, since we choose to do instancing before rendering and expand grass blade at runtime, moreover our skeleton calculation by matching points will run into difficulties when dealing with asymmetric grass blades or leaves. Thirdly, the center point calculation of a grass blade cluster requires appropriate pose for camera and blade cluster, causing some accuracy problem if the poses are not proper. Fourthly, depth image capture by depth camera only support a maximum resolution of $640*480$ pixels, this will cause some problem when we want to capture some small and thin grass blades. Hopefully this problem would be solved with the development of hardware and popularity of depth camera.
+
 \section{Conclusion}
 In this paper, we present a framework for capturing grass blade with depth camera, expansion width calculation and skeleton extraction. We utilize a increasingly popular depth camera and take advantage of depth information provided by depth camera to accomplish efficient capturing. \\
 
