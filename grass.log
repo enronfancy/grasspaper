@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.9)  30 JUN 2015 00:07
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.15)  30 JUN 2015 21:50
 entering extended mode
-**C:/Users/BeYourself/Desktop/grassPaper/grass.tex
-(C:/Users/BeYourself/Desktop/grassPaper/grass.tex
+**C:/Users/Enronfancy/Desktop/grasspaper/grass.tex
+(C:/Users/Enronfancy/Desktop/grasspaper/grass.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
-(C:\Users\BeYourself\Desktop\grassPaper\IEEEtran.cls
+(C:\Users\Enronfancy\Desktop\grasspaper\IEEEtran.cls
 Document Class: IEEEtran 2014/09/17 V1.8a by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -279,7 +279,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(C:\Users\BeYourself\Desktop\grassPaper\grass.aux)
+(C:\Users\Enronfancy\Desktop\grasspaper\grass.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 384.
 LaTeX Font Info:    ... okay on input line 384.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 384.
@@ -364,7 +364,7 @@ LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 557
  [1{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
 
 
- <C:/Users/BeYourself/Desktop/grassPaper/figs/teaser1.jpg>]
+ <C:/Users/Enronfancy/Desktop/grasspaper/figs/teaser1.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 558--559
 
  []
@@ -461,8 +461,8 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3 <C:/Users/BeYourself/Desktop/grassPaper/figs/algorithm.jpg> <C:/Users/BeYou
-rself/Desktop/grassPaper/figs/depth_contour.jpg>]
+ [3 <C:/Users/Enronfancy/Desktop/grasspaper/figs/algorithm.jpg> <C:/Users/Enron
+fancy/Desktop/grasspaper/figs/depth_contour.jpg>]
 <figs/contour_partition.jpg, id=19, 823.075pt x 401.5pt>
 File: figs/contour_partition.jpg Graphic file (type jpg)
 
@@ -501,8 +501,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 696--697
 
  []
 
-[4 <C:/Users/BeYourself/Desktop/grassPaper/figs/contour_partition.jpg> <C:/User
-s/BeYourself/Desktop/grassPaper/figs/skeletoncal.jpg>]
+[4 <C:/Users/Enronfancy/Desktop/grasspaper/figs/contour_partition.jpg> <C:/User
+s/Enronfancy/Desktop/grasspaper/figs/skeletoncal.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 698--699
 
  []
@@ -519,11 +519,11 @@ File: figs/density.png Graphic file (type png)
 Package pdftex.def Info: figs/density.png used on input line 709.
 (pdftex.def)             Requested size: 248.60658pt x 169.59947pt.
 
-<figs/test3.jpg, id=33, 978.65625pt x 978.65625pt>
-File: figs/test3.jpg Graphic file (type jpg)
- <use figs/test3.jpg>
-Package pdftex.def Info: figs/test3.jpg used on input line 718.
-(pdftex.def)             Requested size: 492.03667pt x 492.04475pt.
+<figs/results.jpg, id=33, 1683.28876pt x 2103.86pt>
+File: figs/results.jpg Graphic file (type jpg)
+ <use figs/results.jpg>
+Package pdftex.def Info: figs/results.jpg used on input line 718.
+(pdftex.def)             Requested size: 440.2479pt x 550.23303pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 723--724
 
@@ -540,74 +540,74 @@ Underfull \hbox (badness 10000) in paragraph at lines 725--726
 
  []
 
-[5 <C:/Users/BeYourself/Desktop/grassPaper/figs/lod.jpg> <C:/Users/BeYourself/D
-esktop/grassPaper/figs/expansion.jpg> <C:/Users/BeYourself/Desktop/grassPaper/f
-igs/density.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 729--730
+[5 <C:/Users/Enronfancy/Desktop/grasspaper/figs/lod.jpg> <C:/Users/Enronfancy/D
+esktop/grasspaper/figs/expansion.jpg> <C:/Users/Enronfancy/Desktop/grasspaper/f
+igs/density.png>] [6 <C:/Users/Enronfancy/Desktop/grasspaper/figs/results.jpg>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 729--731
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 751--752
+Underfull \hbox (badness 10000) in paragraph at lines 752--753
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <C:/Users/BeYourself/Desktop/grassPaper/figs/test3.jpg>]
-Underfull \hbox (badness 1360) in paragraph at lines 756--757
+Underfull \hbox (badness 1360) in paragraph at lines 757--758
 \OT1/ppl/m/n/9.53561 move-men-t sim-i-lar-i-ty is in-tro-duced to re-duce skele
 -ton
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 756--757
+Underfull \hbox (badness 10000) in paragraph at lines 757--758
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--759
+Underfull \hbox (badness 10000) in paragraph at lines 759--760
 
  []
 
-(C:\Users\BeYourself\Desktop\grassPaper\grass.bbl
+(C:\Users\Enronfancy\Desktop\grasspaper\grass.bbl
 Missing character: There is no ¡ in font pplri7t!
 Missing character: There is no ¯ in font pplri7t!
  [7])
+<figs/test3.jpg, id=47, 978.65625pt x 978.65625pt>
 File: figs/test3.jpg Graphic file (type jpg)
  <use figs/test3.jpg>
-Package pdftex.def Info: figs/test3.jpg used on input line 853.
+Package pdftex.def Info: figs/test3.jpg used on input line 854.
 (pdftex.def)             Requested size: 72.26114pt x 72.26114pt.
 File: figs/test3.jpg Graphic file (type jpg)
 
 <use figs/test3.jpg>
-Package pdftex.def Info: figs/test3.jpg used on input line 853.
+Package pdftex.def Info: figs/test3.jpg used on input line 854.
 (pdftex.def)             Requested size: 72.26114pt x 72.26114pt.
  [8
 
-] (C:\Users\BeYourself\Desktop\grassPaper\grass.aux) ) 
+ <C:/Users/Enronfancy/Desktop/grasspaper/figs/test3.jpg>] (C:\Users\Enronfancy\
+Desktop\grasspaper\grass.aux) ) 
 Here is how much of TeX's memory you used:
- 4513 strings out of 495354
- 70003 string characters out of 3183860
+ 4518 strings out of 495354
+ 70097 string characters out of 3183858
  134136 words of memory out of 3000000
- 7633 multiletter control sequences out of 15000+200000
+ 7637 multiletter control sequences out of 15000+200000
  48474 words of font info for 106 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,10n,38p,2387b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/CTEX/MiKTeX/fonts/enc
-/dvips/fontname/8r.enc}<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pf
-b><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/CTE
-X/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/
-urw/helvetic/uhvb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:
-/CTEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/ur
-w/palatino/uplr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/
-CTEX/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on grass.pdf (8 pages, 6778318 bytes).
+ 36i,10n,38p,2387b,335s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}
+<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmmi7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTE
+X/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/CTEX/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb
+><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type
+1/urw/palatino/uplb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><
+C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/CTEX/MiKTeX/fonts/type1
+/urw/zapfding/uzdr.pfb>
+Output written on grass.pdf (8 pages, 7710233 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
+ 93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 
