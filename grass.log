@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.15)  27 JUN 2015 19:54
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.9)  30 JUN 2015 00:07
 entering extended mode
-**C:/Users/Enronfancy/Desktop/grasspaper/grass.tex
-(C:/Users/Enronfancy/Desktop/grasspaper/grass.tex
+**C:/Users/BeYourself/Desktop/grassPaper/grass.tex
+(C:/Users/BeYourself/Desktop/grassPaper/grass.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
-(C:\Users\Enronfancy\Desktop\grasspaper\IEEEtran.cls
+(C:\Users\BeYourself\Desktop\grassPaper\IEEEtran.cls
 Document Class: IEEEtran 2014/09/17 V1.8a by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -279,7 +279,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(C:\Users\Enronfancy\Desktop\grasspaper\grass.aux)
+(C:\Users\BeYourself\Desktop\grassPaper\grass.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 384.
 LaTeX Font Info:    ... okay on input line 384.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 384.
@@ -311,47 +311,45 @@ LaTeX Font Info:    ... okay on input line 384.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 513.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 518.
 
  (C:\CTEX\MiKTeX\tex\latex\psnfss\ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 513.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8.03> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 513.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 518.
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 51
-3.
-LaTeX Font Info:    Try loading font information for U+pzd on input line 513.
+8.
+LaTeX Font Info:    Try loading font information for U+pzd on input line 518.
 
 (C:\CTEX\MiKTeX\tex\latex\psnfss\upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 513.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 518.
 
 <figs/teaser1.jpg, id=1, 2609.75pt x 1606.0pt>
 File: figs/teaser1.jpg Graphic file (type jpg)
  <use figs/teaser1.jpg>
-Package pdftex.def Info: figs/teaser1.jpg used on input line 513.
+Package pdftex.def Info: figs/teaser1.jpg used on input line 518.
 (pdftex.def)             Requested size: 517.935pt x 318.71925pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 513--513
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
 
  []
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 542.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 547.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <11.04124> not available
 
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 542.
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 547.
 
-Underfull \hbox (badness 2221) in paragraph at lines 551--552
+Underfull \hbox (badness 2221) in paragraph at lines 556--557
 \OT1/ppl/m/n/9.53561 re-al-i-ty(VR) de-vices and ap-pli-ca-tion-s, human-comput
 er
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--552
+Underfull \hbox (badness 10000) in paragraph at lines 556--557
 
  []
 
@@ -361,62 +359,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 553
+LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 557
 .
  [1{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
 
 
- <C:/Users/Enronfancy/Desktop/grasspaper/figs/teaser1.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 553--554
+ <C:/Users/BeYourself/Desktop/grassPaper/figs/teaser1.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 558--559
 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 555
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 560
 .
 
-Underfull \hbox (badness 10000) in paragraph at lines 555--556
+Underfull \hbox (badness 10000) in paragraph at lines 560--561
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 557--558
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 565--566
-
- []
-
-
-Underfull \hbox (badness 1789) in paragraph at lines 567--569
-[]\OT1/ppl/m/n/9.53561 Capturing grass blade with cam-er-a has not been
- []
-
-
-Underfull \hbox (badness 2277) in paragraph at lines 567--569
-\OT1/ppl/m/n/9.53561 be-tween hair and grass blade for their shapes and
- []
-
-
-Underfull \hbox (badness 1406) in paragraph at lines 567--569
-\OT1/ppl/m/n/9.53561 with d-if-fer-en-t hair ma-te-ri-al-s and change hair styl
-e .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 567--569
-
- []
-
-
-Underfull \hbox (badness 3557) in paragraph at lines 570--571
-[]\OT1/ppl/m/n/9.53561 In pre-vi-ous work-s, grass is moved a-side when
- []
-
-
-Underfull \hbox (badness 4621) in paragraph at lines 570--571
-\OT1/ppl/m/n/9.53561 in-ter-ac-tion be-tween grass and ob-jec-t hap-pen-s [13].
+Underfull \hbox (badness 10000) in paragraph at lines 562--563
 
  []
 
@@ -425,41 +386,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 570--571
 
  []
 
-<figs/test.jpg, id=11, 978.65625pt x 376.40625pt>
-File: figs/test.jpg Graphic file (type jpg)
- <use figs/test.jpg>
-Package pdftex.def Info: figs/test.jpg used on input line 579.
-(pdftex.def)             Requested size: 517.935pt x 199.20718pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 584--585
+Underfull \hbox (badness 10000) in paragraph at lines 572--573
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 586--587
+Underfull \hbox (badness 3557) in paragraph at lines 574--575
+[]\OT1/ppl/m/n/9.53561 In pre-vi-ous work-s, grass is moved a-side when
+ []
+
+
+Underfull \hbox (badness 4621) in paragraph at lines 574--575
+\OT1/ppl/m/n/9.53561 in-ter-ac-tion be-tween grass and ob-jec-t hap-pen-s [11].
 
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 588--589
-\OT1/ppl/m/n/9.53561 re-fin-ing al-go-rith-m to do sim-pli-fi-ca-tion. This pro
--cess
+Underfull \hbox (badness 10000) in paragraph at lines 574--575
+
+ []
+
+<figs/algorithm.jpg, id=10, 2046.64626pt x 894.34125pt>
+File: figs/algorithm.jpg Graphic file (type jpg)
+
+<use figs/algorithm.jpg>
+Package pdftex.def Info: figs/algorithm.jpg used on input line 584.
+(pdftex.def)             Requested size: 517.935pt x 226.32771pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 589--590
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 588--589
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 590--591
-
- []
-
-
-Underfull \hbox (badness 1755) in paragraph at lines 593--594
-\OT1/ppl/m/n/9.53561 cam-eras are de-ployed in va-ri-ety of ap-pli-ca-tion-s an
-d
+Underfull \hbox (badness 2753) in paragraph at lines 593--594
+\OT1/ppl/m/n/9.53561 re-fin-ing al-go-rith-m to do sim-pli-fi-ca-tion. This pro
+-cess
  []
 
 
@@ -467,128 +434,180 @@ Underfull \hbox (badness 10000) in paragraph at lines 593--594
 
  []
 
-<figs/depth_contour.jpg, id=16, 949.5475pt x 454.69875pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 595--596
+
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 598--599
+\OT1/ppl/m/n/9.53561 cam-eras are de-ployed in va-ri-ety of ap-pli-ca-tion-s an
+d
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 598--599
+
+ []
+
+<figs/depth_contour.jpg, id=15, 949.5475pt x 454.69875pt>
 File: figs/depth_contour.jpg Graphic file (type jpg)
 
 <use figs/depth_contour.jpg>
-Package pdftex.def Info: figs/depth_contour.jpg used on input line 597.
+Package pdftex.def Info: figs/depth_contour.jpg used on input line 602.
 (pdftex.def)             Requested size: 248.60658pt x 119.04451pt.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 604.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 609.
 
-<figs/contour_partition.jpg, id=17, 823.075pt x 401.5pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <C:/Users/BeYourself/Desktop/grassPaper/figs/algorithm.jpg> <C:/Users/BeYou
+rself/Desktop/grassPaper/figs/depth_contour.jpg>]
+<figs/contour_partition.jpg, id=19, 823.075pt x 401.5pt>
 File: figs/contour_partition.jpg Graphic file (type jpg)
 
 <use figs/contour_partition.jpg>
-Package pdftex.def Info: figs/contour_partition.jpg used on input line 610.
+Package pdftex.def Info: figs/contour_partition.jpg used on input line 615.
 (pdftex.def)             Requested size: 248.60658pt x 121.27185pt.
- [3 <C:/Users/Enronfancy/Desktop/grasspaper/figs/test.jpg> <C:/Users/Enronfancy
-/Desktop/grasspaper/figs/depth_contour.jpg> <C:/Users/Enronfancy/Desktop/grassp
-aper/figs/contour_partition.jpg>]
-<figs/skeletoncal.jpg, id=21, 1321.93875pt x 956.57375pt>
+
+<figs/skeletoncal.jpg, id=20, 1321.93875pt x 956.57375pt>
 File: figs/skeletoncal.jpg Graphic file (type jpg)
 
 <use figs/skeletoncal.jpg>
-Package pdftex.def Info: figs/skeletoncal.jpg used on input line 620.
+Package pdftex.def Info: figs/skeletoncal.jpg used on input line 625.
 (pdftex.def)             Requested size: 233.06917pt x 168.64359pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 626--627
+Underfull \hbox (badness 10000) in paragraph at lines 631--632
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 645--646
+Underfull \hbox (badness 10000) in paragraph at lines 650--651
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 647--648
+Underfull \hbox (badness 10000) in paragraph at lines 652--653
 
  []
 
-<figs/test2.jpg, id=22, 752.8125pt x 526.96875pt>
-File: figs/test2.jpg Graphic file (type jpg)
- <use figs/test2.jpg>
-Package pdftex.def Info: figs/test2.jpg used on input line 683.
-(pdftex.def)             Requested size: 233.0708pt x 142.26738pt.
+<figs/lod.jpg, id=21, 1094.0875pt x 923.45pt>
+File: figs/lod.jpg Graphic file (type jpg)
+ <use figs/lod.jpg>
+Package pdftex.def Info: figs/lod.jpg used on input line 688.
+(pdftex.def)             Requested size: 248.60658pt x 209.82452pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 691--692
-
- []
-
-[4 <C:/Users/Enronfancy/Desktop/grasspaper/figs/skeletoncal.jpg> <C:/Users/Enro
-nfancy/Desktop/grasspaper/figs/test2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 693--694
+Underfull \hbox (badness 10000) in paragraph at lines 696--697
 
  []
 
-<figs/expansion.jpg, id=32, 714.67pt x 381.425pt>
+[4 <C:/Users/BeYourself/Desktop/grassPaper/figs/contour_partition.jpg> <C:/User
+s/BeYourself/Desktop/grassPaper/figs/skeletoncal.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 698--699
+
+ []
+
+<figs/expansion.jpg, id=30, 531.9875pt x 451.6875pt>
 File: figs/expansion.jpg Graphic file (type jpg)
  <use figs/expansion.jpg>
-Package pdftex.def Info: figs/expansion.jpg used on input line 697.
-(pdftex.def)             Requested size: 248.60658pt x 132.68011pt.
+Package pdftex.def Info: figs/expansion.jpg used on input line 702.
+(pdftex.def)             Requested size: 248.60658pt x 211.08012pt.
+
+<figs/density.png, id=31, 341.1144pt x 232.7094pt>
+File: figs/density.png Graphic file (type png)
+ <use figs/density.png>
+Package pdftex.def Info: figs/density.png used on input line 709.
+(pdftex.def)             Requested size: 248.60658pt x 169.59947pt.
 
 <figs/test3.jpg, id=33, 978.65625pt x 978.65625pt>
 File: figs/test3.jpg Graphic file (type jpg)
  <use figs/test3.jpg>
-Package pdftex.def Info: figs/test3.jpg used on input line 707.
+Package pdftex.def Info: figs/test3.jpg used on input line 718.
 (pdftex.def)             Requested size: 492.03667pt x 492.04475pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 712--713
+Underfull \hbox (badness 10000) in paragraph at lines 723--724
 
  []
 
 
-Underfull \hbox (badness 1881) in paragraph at lines 714--715
+Underfull \hbox (badness 1881) in paragraph at lines 725--726
 \OT1/ppl/m/n/9.53561 virtual-reality or augmented-reality ap-pli-ca-tion-s wher
 e
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 714--715
+Underfull \hbox (badness 10000) in paragraph at lines 725--726
+
+ []
+
+[5 <C:/Users/BeYourself/Desktop/grassPaper/figs/lod.jpg> <C:/Users/BeYourself/D
+esktop/grassPaper/figs/expansion.jpg> <C:/Users/BeYourself/Desktop/grassPaper/f
+igs/density.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 729--730
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
+Underfull \hbox (badness 10000) in paragraph at lines 751--752
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 724--725
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <C:/Users/BeYourself/Desktop/grassPaper/figs/test3.jpg>]
+Underfull \hbox (badness 1360) in paragraph at lines 756--757
+\OT1/ppl/m/n/9.53561 move-men-t sim-i-lar-i-ty is in-tro-duced to re-duce skele
+-ton
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 756--757
 
  []
 
-(C:\Users\Enronfancy\Desktop\grasspaper\grass.bbl [5 <C:/Users/Enronfancy/Deskt
-op/grasspaper/figs/expansion.jpg>]
-Underfull \vbox (badness 2894) has occurred while \output is active []
 
-) [6 <C:/Users/Enronfancy/Desktop/grasspaper/figs/test3.jpg>] [7
+Underfull \hbox (badness 10000) in paragraph at lines 758--759
 
-]
-(C:\Users\Enronfancy\Desktop\grasspaper\grass.aux) ) 
+ []
+
+(C:\Users\BeYourself\Desktop\grassPaper\grass.bbl
+Missing character: There is no ¡ in font pplri7t!
+Missing character: There is no ¯ in font pplri7t!
+ [7])
+File: figs/test3.jpg Graphic file (type jpg)
+ <use figs/test3.jpg>
+Package pdftex.def Info: figs/test3.jpg used on input line 853.
+(pdftex.def)             Requested size: 72.26114pt x 72.26114pt.
+File: figs/test3.jpg Graphic file (type jpg)
+
+<use figs/test3.jpg>
+Package pdftex.def Info: figs/test3.jpg used on input line 853.
+(pdftex.def)             Requested size: 72.26114pt x 72.26114pt.
+ [8
+
+] (C:\Users\BeYourself\Desktop\grassPaper\grass.aux) ) 
 Here is how much of TeX's memory you used:
- 4499 strings out of 495354
- 69736 string characters out of 3183858
- 133088 words of memory out of 3000000
- 7619 multiletter control sequences out of 15000+200000
- 49751 words of font info for 107 fonts, out of 3000000 for 9000
+ 4513 strings out of 495354
+ 70003 string characters out of 3183860
+ 134136 words of memory out of 3000000
+ 7633 multiletter control sequences out of 15000+200000
+ 48474 words of font info for 106 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,9n,38p,2387b,335s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/CTEX/MiKTeX/fonts/enc/d
-vips/fontname/8r.enc}<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmmi7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/CTEX/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/ur
-w/helvetic/uhvb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/C
-TEX/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw
-/palatino/uplb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/CT
-EX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/
-zapfding/uzdr.pfb>
-Output written on grass.pdf (7 pages, 5754645 bytes).
+ 36i,10n,38p,2387b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/CTEX/MiKTeX/fonts/enc
+/dvips/fontname/8r.enc}<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pf
+b><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/CTE
+X/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/
+urw/helvetic/uhvb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:
+/CTEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/ur
+w/palatino/uplr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/
+CTEX/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on grass.pdf (8 pages, 6778318 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
+ 92 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

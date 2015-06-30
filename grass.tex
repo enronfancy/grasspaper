@@ -416,13 +416,18 @@
 % journal papers have the author affiliations above the "Manuscript
 % received ..."  text while in non-compsoc journals this is reversed. Sigh.
 
-\author{Bin Sheng,~\IEEEmembership{Member,~IEEE}% <-this % stops a space
+\author{
+Zengzhi Fan, Shanghai Jiao Tong University
+
+Bin Sheng, Shanghai Jiao Tong University
 \IEEEcompsocitemizethanks{\IEEEcompsocthanksitem B.Sheng is with the Department
 of Computer Science and Engineering, Shanghai Jiao Tong, Shanghai,
 China, 200240.\protect\\
 % note need leading \protect in front of \\ to get a newline within \thanks as
 % \\ is fragile and will error, could use \hfil\break instead.
 E-mail: shengbin@cs.sjtu.edu.cn}
+
+
 }
 
 % note the % following the last \IEEEmembership and also \thanks -
@@ -564,20 +569,20 @@ Our main contribution is to capture grass blade shape with depth camera, shape r
 \section{Related Work}
 The most challenging part of grass modeling, rendering and simulation is caused by extremely large quantity. William Reeves and Ricki Blau\cite{reeves1985approximate} addressed those challenges in 1985.\\
 
-Capturing grass blade with camera has not been explored much, however plenty of researches about hair capture have been conducted. There are some similarities between hair and grass blade for their shapes and movement features. Chai et al.\cite{chai2012single} uses single image to do hair modeling, they capture hair style from image and are able to render origin hair style at different angle, with different hair materials and change hair style . Afterwards, they extends their work through user's high-level knowledge to get more accurate hair that matches image and is physically real at the same time. By doing it they are able to finish dynamic hair simulation and interactive hair style editing, which make it possible to apply this hair manipulation in video\cite{chai2013dynamic}. A structure-aware hair capture method\cite{luo2013structure} was introduced in 2013, they adopt a method to generate hair strand segments, set up a connection graph to guarantee hair growth to areas with missed geometry information and connect hair strands with consistent curvature. A method to capture hair using simulated examples was introduced by Hu et al.\cite{hu2014robust}, they use simulated samples as reference to generate hair, and this method could be applied with unconstrained and constrained hair. They also came up with a method to capture braided hair style\cite{hu2014capturing}. They adopt a data-driven reconstruction and use procedurally generated examples to fit captured hair strands. Xu et al. introduced a space-time optimization method to capture dynamic hair. This method could faithfully capture hair strands' shape as well as spatial details. Long et al.\cite{quan2006image} introduced a method to model plant from a dozen of images. This method can recover plant's shape automatically while relying on user to provide some hints for segmentation. Tan et al.\cite{tan2007image} proposed a method to generate 3D trees from images. They populate tree leaves from segmented source images and use shape patterns of visible branches to predict occluded branches. Tree modeling from single image was introduced afterwards\cite{tan2008single}. Yan et al.\cite{yan2014flower} came up with a method for flower reconstruction from a single image, which uses a cone fitting scheme to maintains flower shape.
- \\
+Works about grass can be classified into three categories, grass modeling, rendering and simulation.  Kajiya et al.\cite{kajiya1989rendering} introduced volumetric textures(texels) for short fur rendering. Texels can used to solve spatial aliasing problem. Neyret extended this work to simulate natural scenes such as realistic grass\cite{neyret1996synthesizing} \cite{neyret1998modeling}. Polygons stacks as well as semi-transparent textures are used in implementation of texels\cite{meyer1998interactive}. Brook et al\cite{bakay2002real} improved this method to obtain high rendering performance. Image-based method is used in grass rendering\cite{shah2005real}. This method used bidirectional texture function for grass. Boulanger et al.\cite{boulanger2009rendering} introduced a level-of-detail(LOD) method for grass rendering with realistic dynamic light and shadow effects.\\
 
 In previous works, grass is moved aside when interaction between grass and object happens\cite{guerraz2003procedural}. Spring-mass system is also used to model grass blade and simulate grass-object interaction\cite{chen2010real}\cite{hempe2013generation}. We adopt the simulation algorithm introduced by Han et al.\cite{han2012real}. This method treats collision as hard constraint, meanwhile treat length, bending and twisting as soft constraints in the iterative solver for grass-object interaction. We employ the rendering and simulation framework introduced by \cite{fan2015simulation}. With this frame work, we are able to perform collision computation on GPU and do grass blade instancing on the fly.  We implement our capture module on the basis of this framework to obtain more accurate and diverse grass types.\\
 
 
+Capturing grass blade with camera has not been explored much, however plenty of researches about hair capture have been conducted. There are some similarities between hair and grass blade for their shapes and movement features. Chai et al.\cite{chai2012single} uses single image to do hair modeling, they capture hair style from image and are able to render origin hair style at different angle, with different hair materials and change hair style . Afterwards, they extends their work through user's high-level knowledge to get more accurate hair that matches image and is physically real at the same time. By doing it they are able to finish dynamic hair simulation and interactive hair style editing, which make it possible to apply this hair manipulation in video\cite{chai2013dynamic}. A structure-aware hair capture method\cite{luo2013structure} was introduced in 2013, they adopt a method to generate hair strand segments, set up a connection graph to guarantee hair growth to areas with missed geometry information and connect hair strands with consistent curvature. A method to capture hair using simulated examples was introduced by Hu et al.\cite{hu2014robust}, they use simulated samples as reference to generate hair, and this method could be applied with unconstrained and constrained hair. They also came up with a method to capture braided hair style\cite{hu2014capturing}. They adopt a data-driven reconstruction and use procedurally generated examples to fit captured hair strands. Xu et al. introduced a space-time optimization method to capture dynamic hair. This method could faithfully capture hair strands' shape as well as spatial details. Long et al.\cite{quan2006image} introduced a method to model plant from a dozen of images. This method can recover plant's shape automatically while relying on user to provide some hints for segmentation. Tan et al.\cite{tan2007image} proposed a method to generate 3D trees from images. They populate tree leaves from segmented source images and use shape patterns of visible branches to predict occluded branches. Tree modeling from single image was introduced afterwards\cite{tan2008single}. Yan et al.\cite{yan2014flower} came up with a method for flower reconstruction from a single image, which uses a cone fitting scheme to maintains flower shape.
 
 \section{Algorithm Overview}
 
 
 \begin{figure*}
     \centering
-    \includegraphics[width=1.0\textwidth]{figs/test.jpg}
-    \captionof{figure}{Algorithm overview.}
+    \includegraphics[width=1.0\textwidth]{figs/algorithm.jpg}
+    \captionof{figure}{Overview of system pipeline:(a) Capture grass blade or any appropriate plant with depth camera; (b) Extracted contour(top), partitioned contour for single blade(middle), skeleton and expansion width calculation(bottom); (c) Skeleton refining process using a idealized blade skeleton with 128 vertices, with different refining level to 64,32 and 16 vertices; (d) Instancing scheme: using refined skeleton to generate a grass patch, every tile refer to a subset of grass blade in the patch, expand skeleton to grass according to expansion width; (e) Rendering and simulation.}
     \label{fig:overview}
 \end{figure*}
 
@@ -680,25 +685,31 @@ We use an iterative algorithm to complete this skeleton refining process. After 
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.45\textwidth,height=5cm]{figs/test2.jpg}
-    \captionof{figure}{Skeleton refining process with a sequence of grass blade projected to 2D plane.}
+    \includegraphics[width=0.48\textwidth]{figs/lod.jpg}
+    \captionof{figure}{Skeleton refining process with a sequence of idealized grass blade skeleton projected to 2D plane, at first there is (a) blade skeleton with 128 vertices; after different level of skeleton refining, (b) blade skeleton with 64 vertices; (c) blade skeleton with 32 vertices; (d) blade skeleton with 16 vertices.}
     \label{fig:skeletonrefining}
 \end{figure}
 
 Figure.\ref{fig:skeletonrefining} illustrates a sequence of grass blade with different refining level. Refining level is set by user according to the performance requirement of application and hardware level.
 
 \section{Rendering and Simulation}\label{sec:render}
-According to our captured grass model and refining result, we pre-generate a list of grass blades with some random scaling.We divide the whole scene into tiles. Those blades in the patch are randomly located in a square which has the same size of grass tile in the scene. Each tile contains a subset of continuous blades in the patch. For each grass tile, its offset in the patch is calculated by tile's position coordinate in the scene. With this instancing scheme, we are able to reduce memory use from about $4$ GB of $4$ M blades to only $24$ MB of for a patch of $16384$ blades. With this patch, we manage to implement a grass land wit rich variance.\\
+According to our captured grass model and refining result, we pre-generate a list of grass blades with some random scaling.We divide the whole scene into tiles. Those blades in the patch are randomly located in a square which has the same size of grass tile in the scene. Each tile contains a subset of continuous blades in the patch. For each grass tile, its offset in the patch is calculated by tile's position coordinate in the scene. With this instancing scheme, we are able to reduce memory use from about $4$ GB of $4$ M blades to only $24$ MB of for a patch of $16384$ blades. With this patch, we manage to implement a grassland with rich variance.\\
 
-We draw one line segment as two degenerate triangles and expand each knot of this line segment at runtime according to expansion width captured through the camera. Figure.\ref{fig:expasion} illustrates this expansion process. We employ Phong shading along with subsurface scattering effect\cite{sousa2007vegetation}.\\
+We draw one line segment as two degenerate triangles and expand each knot of this line segment at runtime according to expansion width captured through depth camera. Figure.\ref{fig:expasion} illustrates this expansion process. We employ Phong shading along with subsurface scattering effect\cite{sousa2007vegetation} in our system. In order to avoid a monotone we use a density map in our system. Figure.\ref{fig:density} illustrated our density map generated with Perlin noise\cite{perlin1985image}. \\
 
 \begin{figure}
     \centering
     \includegraphics[width=0.48\textwidth]{figs/expansion.jpg}
-    \captionof{figure}{Blade skeleton expansion:(a) Part of blade skeleton presented by overlapping vertices; (b) Expanded triangles from blade skeleton.}
+    \captionof{figure}{Blade skeleton expansion:(a) Simulation blade skeleton presented by overlapping vertices; (b) Expanded triangle model from blade skeleton for rendering; (c) shaded result.}
     \label{fig:expasion}
 \end{figure}
 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.48\textwidth]{figs/density.png}
+    \captionof{figure}{Blade skeleton expansion:(a) Simulation blade skeleton presented by overlapping vertices; (b) Expanded triangle model from blade skeleton for rendering; (c) shaded result.}
+    \label{fig:density}
+\end{figure}
 In our simulation system, $Bullet$ is used to handle collision between ground and other object. We use the simulation method introduced by \cite{han2012real} and tile management scheme introduced by \cite{fan2015simulation}. This simulation scheme is compatible with procedural animation. We are able to simulate millions of grass blades with real-time performance.
 
 \section{Implementation and Results}
@@ -717,13 +728,36 @@ Our system is evaluated with a variety of grass blades and leaves that can be us
 
 In Figure.\ref{fig:results}(a), (b), (c), (d). To be done.\\
 
+\begin{table}[ht]
+\begin{center}
+ \begin{tabular}{|c|c|c|c|c|}
+     \hline
+     \textbf{Tiles} & 6 & 14 & 150 & 709 \\
+     \hline
+     \textbf{Blades}& 384 & 896 & 9600 & 45376 \\
+     \hline
+     \textbf{Objects} & 1 & 2 & 20 & 128 \\
+     \hline
+     \textbf{Sim time(ms)} & 0.176 & 0.183 & 0.952 & 4.67 \\
+     \hline
+     \textbf{Sim time/Blade (ns)} & 0.458 & 0.204 & 0.099 & 0.103 \\
+     \hline
+ \end{tabular}
+ \caption{Simulation time data with different activated tiles, objects.}
+ \label{table:frameprofile}
+ \end{center}
+ \end{table}
+
+We have tested our algorithm to evaluate its rendering and simulation performance. In our system, we need only one draw call to rendering the whole scene, which greatly reduce CPU overhead. We are able to render a scene of $14926$ tiles in $20$ ms, in total there are $955264$ blades and over $29$ million triangles. In table.\ref{table:frameprofile}, profiling data for simulation demonstrates the effectiveness of our system. Simulation time for a single blade decreases with the increase of simulated tiles as listed in the table. This gives the evidence that our system is suitable to solve the high simulation cost problem caused by extremely large grassland.\\
 
 \textbf{Limitations.} Restricted by vertex amount of grass blade, our method has some limitations. First, small vertex amount is not enough to model jagged blades or leaves. Sharp variation in shape definitely need more vertices to remain such features. However, vertex amount is severely restricted by performance requirements, we need to balance vertex amount and performance at the same time. Secondly, since we choose to do instancing before rendering and expand grass blade at runtime, moreover our skeleton calculation by matching points will run into difficulties when dealing with asymmetric grass blades or leaves. Thirdly, the center point calculation of a grass blade cluster requires appropriate pose for camera and blade cluster, causing some accuracy problem if the poses are not proper. Fourthly, depth image capture by depth camera only support a maximum resolution of $640*480$ pixels, this will cause some problem when we want to capture some small and thin grass blades. Hopefully this problem would be solved with the development of hardware and popularity of depth camera.
 
 \section{Conclusion}
-In this paper, we present a framework for capturing grass blade with depth camera, expansion width calculation and skeleton extraction. We utilize a increasingly popular depth camera and take advantage of depth information provided by depth camera to accomplish efficient capturing. \\
+In this paper, we present a framework for capturing grass blade with depth camera, expansion width calculation and skeleton extraction. We utilize a increasingly popular depth camera and take advantage of depth information provided by depth camera to accomplish efficient capturing. We extract a blob of blades according to objects' depth range and calculate its edge to obtain a contour. A particle-flow method is used to partition single blade's contour from a cluster of blades. Based on a single blade's contour, we calculate a skeleton by matching symmetrical vertices on the contour and expansion width for each vertices of the skeleton. A skeleton refining process according to vertices' movement similarity is introduced to reduce skeleton vertex number so that it can be used in the rendering and simulation system with acceptable performance. As for rendering, we adopt a GPU-instanced scheme reduce memory usage. A tile management method is employed to pay simulation cost for those tiles only when needed.\\
 
-In summary, our work demonstrate how interactive capturing method can be developed to model grass blade and use it in rendering and simulation scenes. This work can be extended to many fields and inspire other capturing and modeling method.
+Our proposed method concentrate on capturing grass blade shape and refining its structure so that it can be used in the rendering and simulation method for large scale grassland. We are able to a variety of grass blades. We would like to extend our method to handle more complex blade shapes or capture other kind of plants. Furthermore, our method does not handle grass fracture and deformation. Skeleton and expansion width calculation may get incorrect result with such cases. We plan to handle grass fracture in future works and add support for structurally different vegetation.\\
+
+In summary, our work demonstrate how interactive capturing method can be developed to model grass blade and use it in rendering and simulation frameworks. This work can be extended to many fields and inspire other capturing and modeling method for plants and other relative objects.
 
 
 
@@ -761,9 +795,7 @@ In summary, our work demonstrate how interactive capturing method can be develop
   \section*{Acknowledgment}
 \fi
 
-
-The authors would like to thank...
-
+Thank my teammate for helping me with this paper.
 
 % Can use something like this to put references on a page
 % by themselves when using endfloat and the captionsoff option.
@@ -818,12 +850,12 @@ The authors would like to thank...
 %\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
 % or if you just want to reserve a space for a photo:
 
-\begin{IEEEbiography}{Michael Shell}
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{figs/test3.jpg}}]{Zengzhi Fan}
 Biography text here.
 \end{IEEEbiography}
 
 % if you will not have a photo at all:
-\begin{IEEEbiographynophoto}{John Doe}
+\begin{IEEEbiographynophoto}{Bin Sheng}
 Biography text here.
 \end{IEEEbiographynophoto}
 
@@ -831,9 +863,6 @@ Biography text here.
 % biographies
 %\newpage
 
-\begin{IEEEbiographynophoto}{Jane Doe}
-Biography text here.
-\end{IEEEbiographynophoto}
 
 % You can push biographies down or up by placing
 % a \vfill before or after them. The appropriate

@@ -37,6 +37,57 @@ W.~T. Reeves and R.~Blau, ``Approximate and probabilistic algorithms for
   Computer Graphics}, vol.~19, no.~3.\hskip 1em plus 0.5em minus 0.4em\relax
   ACM, 1985, pp. 313--322.
 
+\bibitem{kajiya1989rendering}
+J.~T. Kajiya and T.~L. Kay, ``Rendering fur with three dimensional textures,''
+  in \emph{ACM Siggraph Computer Graphics}, vol.~23, no.~3.\hskip 1em plus
+  0.5em minus 0.4em\relax ACM, 1989, pp. 271--280.
+
+\bibitem{neyret1996synthesizing}
+F.~Neyret, \emph{Synthesizing verdant landscapes using volumetric
+  textures}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 1996.
+
+\bibitem{neyret1998modeling}
+------, ``Modeling, animating, and rendering complex scenes using volumetric
+  textures,'' \emph{Visualization and Computer Graphics, IEEE Transactions on},
+  vol.~4, no.~1, pp. 55--70, 1998.
+
+\bibitem{meyer1998interactive}
+A.~Meyer and F.~Neyret, ``Interactive volumetric textures,'' in \emph{Rendering
+  Techniques¡¯ 98}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 1998, pp.
+  157--168.
+
+\bibitem{bakay2002real}
+B.~Bakay, P.~Lalonde, and W.~Heidrich, ``Real-time animated grass,'' in
+  \emph{Eurographics 2002}, 2002.
+
+\bibitem{shah2005real}
+M.~A. Shah, J.~Kontinnen, and S.~Pattanaik, ``Real-time rendering of
+  realistic-looking grass,'' in \emph{Proceedings of the 3rd international
+  conference on Computer graphics and interactive techniques in Australasia and
+  South East Asia}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2005, pp.
+  77--82.
+
+\bibitem{boulanger2009rendering}
+K.~Boulanger, S.~N. Pattanaik, and K.~Bouatouch, ``Rendering grass in real time
+  with dynamic lighting,'' \emph{IEEE Computer Graphics and Applications},
+  no.~1, pp. 32--41, 2009.
+
+\bibitem{guerraz2003procedural}
+S.~Guerraz, F.~Perbet, D.~Raulo, F.~Faure, and M.-P. Cani, ``A procedural
+  approach to animate interactive natural sceneries,'' in \emph{Computer
+  Animation and Social Agents, 2003. 16th International Conference on}.\hskip
+  1em plus 0.5em minus 0.4em\relax IEEE, 2003, pp. 73--78.
+
+\bibitem{chen2010real}
+K.~Chen and H.~Johan, ``Real-time continuum grass,'' in \emph{Virtual Reality
+  Conference (VR), 2010 IEEE}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
+  2010, pp. 227--234.
+
+\bibitem{hempe2013generation}
+N.~Hempe, J.~Rossmann, and B.~Sondermann, ``Generation and rendering of
+  interactive ground vegetation for real-time testing and validation of
+  computer vision algorithms,'' 2013.
+
 \bibitem{chai2012single}
 M.~Chai, L.~Wang, Y.~Weng, Y.~Yu, B.~Guo, and K.~Zhou, ``Single-view hair
   modeling for portrait manipulation,'' \emph{ACM Transactions on Graphics
@@ -80,22 +131,6 @@ F.~Yan, M.~Gong, D.~Cohen-Or, O.~Deussen, and B.~Chen, ``Flower reconstruction
   no.~2.\hskip 1em plus 0.5em minus 0.4em\relax Wiley Online Library, 2014, pp.
   439--447.
 
-\bibitem{guerraz2003procedural}
-S.~Guerraz, F.~Perbet, D.~Raulo, F.~Faure, and M.-P. Cani, ``A procedural
-  approach to animate interactive natural sceneries,'' in \emph{Computer
-  Animation and Social Agents, 2003. 16th International Conference on}.\hskip
-  1em plus 0.5em minus 0.4em\relax IEEE, 2003, pp. 73--78.
-
-\bibitem{chen2010real}
-K.~Chen and H.~Johan, ``Real-time continuum grass,'' in \emph{Virtual Reality
-  Conference (VR), 2010 IEEE}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
-  2010, pp. 227--234.
-
-\bibitem{hempe2013generation}
-N.~Hempe, J.~Rossmann, and B.~Sondermann, ``Generation and rendering of
-  interactive ground vegetation for real-time testing and validation of
-  computer vision algorithms,'' 2013.
-
 \bibitem{neubert2007approximate}
 B.~Neubert, T.~Franken, and O.~Deussen, ``Approximate image-based tree-modeling
   using particle flows,'' \emph{ACM Transactions on Graphics (TOG)}, vol.~26,
@@ -104,5 +139,9 @@ B.~Neubert, T.~Franken, and O.~Deussen, ``Approximate image-based tree-modeling
 \bibitem{sousa2007vegetation}
 T.~Sousa, ``Vegetation procedural animation and shading in crysis,'' \emph{GPU
   Gems}, vol.~3, pp. 373--385, 2007.
+
+\bibitem{perlin1985image}
+K.~Perlin, ``An image synthesizer,'' \emph{ACM Siggraph Computer Graphics},
+  vol.~19, no.~3, pp. 287--296, 1985.
 
 \end{thebibliography}
