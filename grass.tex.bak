@@ -392,7 +392,7 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Capturing, rendering and simulation for large scale grassland}
+\title{Capturing, Rendering and Simulation for Large Scale Grassland}
 %
 %
 % author names and IEEE memberships
@@ -573,8 +573,9 @@ Works about grass can be classified into three categories, grass modeling, rende
 
 In previous works, grass is moved aside when interaction between grass and object happens\cite{guerraz2003procedural}. Spring-mass system is also used to model grass blade and simulate grass-object interaction\cite{chen2010real}\cite{hempe2013generation}. We adopt the simulation algorithm introduced by Han et al.\cite{han2012real}. This method treats collision as hard constraint, meanwhile treat length, bending and twisting as soft constraints in the iterative solver for grass-object interaction. We employ the rendering and simulation framework introduced by \cite{fan2015simulation}. With this frame work, we are able to perform collision computation on GPU and do grass blade instancing on the fly.  We implement our capture module on the basis of this framework to obtain more accurate and diverse grass types.\\
 
+As for leaf and flora reconstruction, there are some previous works about using interactive method to generate or reconstruct leaf shape and tree shapes\cite{mundermann2003modeling}\cite{okabe2005interactive}\cite{anastacio2006modeling}\cite{chen2008sketch}\cite{pirk2012plastic}.Quan et al.\cite{quan2006image} introduced a method to model plant from a dozen of images. This method can recover plant's shape automatically while relying on user to provide some hints for segmentation. Tan et al.\cite{tan2007image} proposed a method to generate 3D trees from images. They populate tree leaves from segmented source images and use shape patterns of visible branches to predict occluded branches. Tree modeling from single image was introduced afterwards\cite{tan2008single}. Yan et al.\cite{yan2014flower} came up with a method for flower reconstruction from a single image, which uses a cone fitting scheme to maintains flower shape.Bradley et al.\cite{bradley2013image} presented a scale technique to compute 3D structure of foliage and extract leaf shapes.
 
-Capturing grass blade with camera has not been explored much, however plenty of researches about hair capture have been conducted. There are some similarities between hair and grass blade for their shapes and movement features. Chai et al.\cite{chai2012single} uses single image to do hair modeling, they capture hair style from image and are able to render origin hair style at different angle, with different hair materials and change hair style . Afterwards, they extends their work through user's high-level knowledge to get more accurate hair that matches image and is physically real at the same time. By doing it they are able to finish dynamic hair simulation and interactive hair style editing, which make it possible to apply this hair manipulation in video\cite{chai2013dynamic}. A structure-aware hair capture method\cite{luo2013structure} was introduced in 2013, they adopt a method to generate hair strand segments, set up a connection graph to guarantee hair growth to areas with missed geometry information and connect hair strands with consistent curvature. A method to capture hair using simulated examples was introduced by Hu et al.\cite{hu2014robust}, they use simulated samples as reference to generate hair, and this method could be applied with unconstrained and constrained hair. They also came up with a method to capture braided hair style\cite{hu2014capturing}. They adopt a data-driven reconstruction and use procedurally generated examples to fit captured hair strands. Xu et al. introduced a space-time optimization method to capture dynamic hair. This method could faithfully capture hair strands' shape as well as spatial details. Long et al.\cite{quan2006image} introduced a method to model plant from a dozen of images. This method can recover plant's shape automatically while relying on user to provide some hints for segmentation. Tan et al.\cite{tan2007image} proposed a method to generate 3D trees from images. They populate tree leaves from segmented source images and use shape patterns of visible branches to predict occluded branches. Tree modeling from single image was introduced afterwards\cite{tan2008single}. Yan et al.\cite{yan2014flower} came up with a method for flower reconstruction from a single image, which uses a cone fitting scheme to maintains flower shape.
+Capturing grass blade with camera has not been explored much, however plenty of researches about hair capture have been conducted. There are some similarities between hair and grass blade for their shapes and movement features. Chai et al.\cite{chai2012single} uses single image to do hair modeling, they capture hair style from image and are able to render origin hair style at different angle, with different hair materials and change hair style . Afterwards, they extends their work through user's high-level knowledge to get more accurate hair that matches image and is physically real at the same time. By doing it they are able to finish dynamic hair simulation and interactive hair style editing, which make it possible to apply this hair manipulation in video\cite{chai2013dynamic}. A structure-aware hair capture method\cite{luo2013structure} was introduced in 2013, they adopt a method to generate hair strand segments, set up a connection graph to guarantee hair growth to areas with missed geometry information and connect hair strands with consistent curvature. A method to capture hair using simulated examples was introduced by Hu et al.\cite{hu2014robust}, they use simulated samples as reference to generate hair, and this method could be applied with unconstrained and constrained hair. They also came up with a method to capture braided hair style\cite{hu2014capturing}. They adopt a data-driven reconstruction and use procedurally generated examples to fit captured hair strands. Xu et al. introduced a space-time optimization method to capture dynamic hair. This method could faithfully capture hair strands' shape as well as spatial details.
 
 \section{Algorithm Overview}
 
@@ -649,7 +650,7 @@ var(v_{1}, v_{2}) = (\dfrac{\sum_{i = 0}^{n}{d(v_{1}^{i}, v_{2}^{i})}^{2}}{n} - 
 
 $dis$ function represents distance factor and $var$ function represents variance factor. $\mu$ is proportion factor for distance and variance, which can be set by user.\\
 
-We use an iterative algorithm to complete this skeleton refining process. After skeleton calculation, we manage to obtain array of skeleton vertices. We design a greedy algorithm to iteratively merge two adjacent vertices, based on the assumption that if two vertices are the most similar then they should be adjacent vertices in the array. Because distance factor is an very important part in similarity definition, and closer vertices always get lower score for distance factor. This algorithm is illustrated as below:\\
+We use an iterative algorithm to complete this skeleton refining process. After skeleton calculation, we manage to obtain array of skeleton vertices. We design a greedy algorithm to iteratively merge two adjacent vertices, based on the assumption that if two vertices are the most similar then they should be adjacent vertices in the array. Because distance factor is an very important part in similarity definition, and closer vertices always get lower score for distance factor. This algorithm is illustrated in \ref{tbl:skeletonrefining}.\\
 
 \floatname{algorithm}{Algorithm}
     \renewcommand{\algorithmicrequire}{\textbf{Input:}}
@@ -715,8 +716,8 @@ In our simulation system, $Bullet$ is used to handle collision between ground an
 \section{Implementation and Results}
 \begin{figure*}
     \centering
-    \includegraphics[width=0.95\textwidth]{figs/result.jpg}
-    \captionof{figure}{Experiment results:(a) traditional slender grass blade, (b) bamboo leaf, (c) potting leaf, (d) leaf with shape variation}
+    \includegraphics[width=0.85\textwidth]{figs/results.jpg}
+    \captionof{figure}{Experiment results:(a) blade similar to most leaves, blade edge is quadratic curve like; (b) blade that is slender than the first one, blade edge is still regular (c) bamboo leaf which is thin, its edge is very smooth and flat except for its top and root; (d) leaf with shape variation, it has a very sharp and narrow tip.}
     \label{fig:results}
 \end{figure*}
 
@@ -726,7 +727,7 @@ Our system is evaluated with a variety of grass blades and leaves that can be us
 
 
 
-In Figure.\ref{fig:results}(a), (b), (c), (d). To be done.\\
+In Figure.\ref{fig:results}(a) we choose a vine and capture its leaf as grass blade. This blade is like a tree leaf, its blade edge can be described as a quadratic curve. In (b) we choose a cluster of leaves from a shrub. This leaf is longer however its blade edge is still regular and quadratic-curve like. In (c) we choose a cluster of bamboo leaves. Bamboo leave is thin and slim, from the figure we could see that its blade edge is very smooth and flat in the middle and it is hard to be described with simple quadratic curves. In(d) we choose a leaf with variation it the top. It has a very sharp and narrow tip which make it special. Camera captured this feature kept it through our expansion width calculation.\\
 
 \begin{table}[ht]
 \begin{center}
