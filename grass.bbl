@@ -23,7 +23,7 @@
 
 \bibitem{han2012real}
 D.~Han and T.~Harada, ``Real-time hair simulation with efficient hair style
-  preservation,'' pp. 45--51, 2012.
+  preservation,'' \emph{vriphys12-proc}, pp. 45--51, 2012.
 
 \bibitem{fan2015simulation}
 Z.~Fan, H.~Li, K.~Hillesland, and B.~Sheng, ``Simulation and rendering for
@@ -47,9 +47,9 @@ F.~Neyret, \emph{Synthesizing verdant landscapes using volumetric
   textures}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 1996.
 
 \bibitem{neyret1998modeling}
-------, ``Modeling, animating, and rendering complex scenes using volumetric
-  textures,'' \emph{Visualization and Computer Graphics, IEEE Transactions on},
-  vol.~4, no.~1, pp. 55--70, 1998.
+N.~Fabrice, ``Modeling, animating, and rendering complex scenes using
+  volumetric textures,'' \emph{Visualization and Computer Graphics, IEEE
+  Transactions on}, vol.~4, no.~1, pp. 55--70, 1998.
 
 \bibitem{meyer1998interactive}
 A.~Meyer and F.~Neyret, ``Interactive volumetric textures,'' in \emph{Rendering
@@ -87,6 +87,11 @@ K.~Chen and H.~Johan, ``Real-time continuum grass,'' in \emph{Virtual Reality
 N.~Hempe, J.~Rossmann, and B.~Sondermann, ``Generation and rendering of
   interactive ground vegetation for real-time testing and validation of
   computer vision algorithms,'' 2013.
+
+\bibitem{wu2012using}
+W.~Wu, P.-A. Heng, E.~Wu \emph{et~al.}, ``Using time-varying texels to simulate
+  withering grassland,'' \emph{Computer Graphics and Applications, IEEE},
+  vol.~32, no.~1, pp. 78--86, 2012.
 
 \bibitem{mundermann2003modeling}
 L.~M{\"u}ndermann, P.~MacMurchy, J.~Pivovarov, and P.~Prusinkiewicz, ``Modeling
