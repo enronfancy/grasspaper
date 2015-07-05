@@ -168,6 +168,11 @@ L.~Hu, C.~Ma, L.~Luo, and H.~Li, ``Robust hair capture using simulated
 L.~Hu, C.~Ma, L.~Luo, L.-Y. Wei, and H.~Li, ``Capturing braided hairstyles,''
   \emph{ACM Transactions on Graphics (TOG)}, vol.~33, no.~6, p. 225, 2014.
 
+\bibitem{xu2014dynamic}
+Z.~Xu, H.-T. Wu, L.~Wang, C.~Zheng, X.~Tong, and Y.~Qi, ``Dynamic hair capture
+  using spacetime optimization,'' \emph{To appear in ACM TOG}, vol.~33, p.~6,
+  2014.
+
 \bibitem{neubert2007approximate}
 B.~Neubert, T.~Franken, and O.~Deussen, ``Approximate image-based tree-modeling
   using particle flows,'' \emph{ACM Transactions on Graphics (TOG)}, vol.~26,
