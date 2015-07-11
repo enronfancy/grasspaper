@@ -3,7 +3,7 @@
 %% V1.4a
 %% 2014/09/17
 %% by Michael Shell
-%% See:
+%% See:anastacio2006modeling
 %% http://www.michaelshell.org/
 %% for current contact information.
 %%
@@ -559,7 +559,7 @@ We intend to build a system which is able to capture grass blade from camera, re
 
 We use depth information for background masking, which is difficult and much slower with image-based methods. We extract a blob of grass blades from depth image and calculate the contour of grass blades from extracted blob. A particle-flow method is adopted to partition single blade contour from a cluster blades. According to single blade contour, a vertex matching method is used to calculate blade width and skeleton, which is used to guide the expansion and movement of grass blade in rendering and simulation respectively.\\
 
-In order to achieve real-time performance of rendering and simulation, every grass blade is modeled as a curve with no more than $64$ vertices. We expand this curve to a triangle before rendering. In our system we usually choose $16$ as the number of vertices for a single curve to guarantee high rendering and simulation performance. Thus we have to refine the grass shape we capture from camera, and extract the skeleton that could best describe the grass blade's movement, and calculate the expansion width for each vertex of the curve.\\
+In order to achieve real-time performance of rendering and simulation, every grass blade is modeled as a curve with no more than $64$ vertices. We expand this curve to a triangle before rendering. In our system we usually choose $16$ as the number of vertices for a single curve to guarantee high rendering and simulation performance. Thus we have to refine the grass shape captured from camera, and extract the skeleton that could best describe the grass blade's movement, and calculate the expansion width for each vertex of the curve.\\
 
 Our system is designed to render and simulate a very large scale grassland in which every single grass blade has individual and realistic response to collision. Therefore we apply GPU-based instancing to lower the requirement for memory and bandwidth, and pay simulation costs only when needed. Meanwhile, this is a tile-based rendering and simulation system, no per-tile data is store unless simulation for a specific tile is required. We implement the method introduced by Han et al.\cite{han2012real} to simulate our grass blade and extend the method introduced by Fan et al.\cite{fan2015simulation} to do tile management.\\
 
@@ -580,13 +580,16 @@ A number of works for leaf and flora reconstruction have reference value for our
 
 Capturing grass blade with camera has not been explored much, however plenty of researches about hair capture have been conducted. There are some similarities between hair and grass blade for their shapes and movement features. Chai et al.\cite{chai2012single} uses single image to do hair modeling, they captured hair style from image and were able to render origin hair style at different angle, with different hair materials and change hair style . Afterwards, they extended their work through user's high-level knowledge to get more accurate hair that matches image and waa physically real at the same time. By doing it they were able to finish dynamic hair simulation and interactive hair style editing, which made it possible to apply this hair manipulation in video\cite{chai2013dynamic}. A structure-aware hair capture method\cite{luo2013structure} was introduced in 2013, authors adopted a method to generate hair strand segments, set up a connection graph to guarantee hair growth to areas with missed geometry information and connected hair strands with consistent curvature. A method to capture hair using simulated examples was introduced by Hu et al.\cite{hu2014robust}, they used simulated samples as references to generate hair, and this method could be applied with unconstrained and constrained hair. They also came up with a method to capture braided hair style\cite{hu2014capturing}. A data-driven reconstruction method was adopted in this scheme and procedurally generated examples were used to fit captured hair strands. Xu et al.\cite{xu2014dynamic} introduced a space-time optimization method to capture dynamic hair. This method could faithfully capture hair strands' shape as well as spatial details.
 
+Level-of-detail(LOD) methods are typical model simplification algorithms, they are used to simplify model geometry complexity and accelerate rendering as well as simulation performance. Framework used to obtain a constant frame rate for visualization of virtual environments was introduced in 1993\cite{funkhouser1993adaptive}. Geometry-based LOD algorithms including quad remeshing methods were summarized in \cite{bommes2013quad}. Field-guided parameterization-based methods split quad remeshing into three steps including cross-field computation, integer-grid parameterization and quad mesh extraction\cite{ray2006periodic}\cite{kalberer2007quadcover}
+\cite{bommes2009mixed}\cite{zhang2010wave}. Except for those geometry-based LOD algorithms, level-of-detail was also used in simulation method. Techniques for reducing the computational complexity for simulations was introduced by Carlson et al.\cite{simulation1997Deborah}. LOD was also used for animation and rendering of prairies and particle systems\cite{o2001automatic}. Our 
+
 \section{Algorithm Overview}
 
 
 \begin{figure*}
     \centering
     \includegraphics[width=1.0\textwidth]{figs/overview.jpg}
-    \captionof{figure}{Overview of system pipeline:(a) Capture grass blade or any appropriate plant with depth camera; (b) Extracted contour(top), partitioned contour for single blade(middle), skeleton and expansion width calculation(bottom); (c) Skeleton refining process using a idealized blade skeleton with 128 vertices, with different refining level to 64,32 and 16 vertices; (d) Instancing scheme: using refined skeleton to generate a grass patch, every tile refer to a subset of grass blade in the patch, expand skeleton to grass according to expansion width; (e) Rendering and simulation.}
+    \captionof{figure}{Overview of system pipeline:(a) a cluster of grass blades and depth depth image captured with camera, those are raw data in our system; (b) extracted contour(top), partitioned contour for single blade marked with different color respectively(bottom);(c) skeleton and expansion width calculation(bottom); (d) skeleton refining process using a idealized blade skeleton with 128 vertices, with different refining levels that reduce skeleton vertices down to 64,32 and 16 vertices; (e) instancing scheme: using refined skeleton to generate a grass patch, every tile refer to a subset of grass blade in the patch, expand skeleton to grass according to expansion width; (f) rendering and simulation.}
     \label{fig:overview}
 \end{figure*}
 
@@ -717,10 +720,18 @@ We draw one line segment as two degenerate triangles and expand each knot of thi
 \end{figure}
 In our simulation system, $Bullet$ is used to handle collision between ground and other object. We use the simulation method introduced by \cite{han2012real} and tile management scheme introduced by \cite{fan2015simulation}. This simulation scheme is compatible with procedural animation. We are able to simulate millions of grass blades with real-time performance.
 
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.95\textwidth]{figs/sim2.jpg}
+    \captionof{figure}{Sequence of frames obtained through our rendering and simulation method.}
+    \label{fig:simseq}
+\end{figure*}
+
+
 \section{Implementation and Results}
 \begin{figure*}
     \centering
-    \includegraphics[width=1.0\textwidth, height = 20cm]{figs/results.jpg}
+    \includegraphics[width=0.8\textwidth, height = 20cm]{figs/results.jpg}
     \captionof{figure}{Experiment results:(a) regular slim and thin grass blade ;(b) blade similar to most leaves, blade edge is quadratic curve like; (c) blade that is slender than the first one, blade edge is still regular (d) bamboo leaf which is thin, its edge is very smooth and flat except for its top and root; (e) leaf with shape variation, it has a very sharp and narrow tip.}
     \label{fig:results}
 \end{figure*}

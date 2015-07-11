@@ -173,6 +173,50 @@ Z.~Xu, H.-T. Wu, L.~Wang, C.~Zheng, X.~Tong, and Y.~Qi, ``Dynamic hair capture
   using spacetime optimization,'' \emph{To appear in ACM TOG}, vol.~33, p.~6,
   2014.
 
+\bibitem{funkhouser1993adaptive}
+T.~A. Funkhouser and C.~H. S{\'e}quin, ``Adaptive display algorithm for
+  interactive frame rates during visualization of complex virtual
+  environments,'' in \emph{Proceedings of the 20th annual conference on
+  Computer graphics and interactive techniques}.\hskip 1em plus 0.5em minus
+  0.4em\relax ACM, 1993, pp. 247--254.
+
+\bibitem{bommes2013quad}
+D.~Bommes, B.~L{\'e}vy, N.~Pietroni, E.~Puppo, C.~Silva, M.~Tarini, and
+  D.~Zorin, ``Quad-mesh generation and processing: A survey,'' in
+  \emph{Computer Graphics Forum}, vol.~32, no.~6.\hskip 1em plus 0.5em minus
+  0.4em\relax Wiley Online Library, 2013, pp. 51--76.
+
+\bibitem{ray2006periodic}
+N.~Ray, W.~C. Li, B.~L{\'e}vy, A.~Sheffer, and P.~Alliez, ``Periodic global
+  parameterization,'' \emph{ACM Transactions on Graphics (TOG)}, vol.~25,
+  no.~4, pp. 1460--1485, 2006.
+
+\bibitem{kalberer2007quadcover}
+F.~K{\"a}lberer, M.~Nieser, and K.~Polthier, ``Quadcover-surface
+  parameterization using branched coverings,'' in \emph{Computer Graphics
+  Forum}, vol.~26, no.~3.\hskip 1em plus 0.5em minus 0.4em\relax Wiley Online
+  Library, 2007, pp. 375--384.
+
+\bibitem{bommes2009mixed}
+D.~Bommes, H.~Zimmer, and L.~Kobbelt, ``Mixed-integer quadrangulation,'' in
+  \emph{ACM Transactions On Graphics (TOG)}, vol.~28, no.~3.\hskip 1em plus
+  0.5em minus 0.4em\relax ACM, 2009, p.~77.
+
+\bibitem{zhang2010wave}
+M.~Zhang, J.~Huang, X.~Liu, and H.~Bao, ``A wave-based anisotropic
+  quadrangulation method,'' in \emph{ACM Transactions on Graphics (TOG)},
+  vol.~29, no.~4.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2010, p. 118.
+
+\bibitem{simulation1997Deborah}
+D.~A. Carlson and J.~K. Hodgins, ``Simulation levels of detail for real-time
+  animation,'' in \emph{Proc. of Graphics Interface 1997}, 1997.
+
+\bibitem{o2001automatic}
+D.~O'Brien, S.~Fisher, and M.~C. Lin, ``Automatic simplification of particle
+  system dynamics,'' in \emph{Computer Animation, 2001. The Fourteenth
+  Conference on Computer Animation. Proceedings}.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2001, pp. 210--257.
+
 \bibitem{neubert2007approximate}
 B.~Neubert, T.~Franken, and O.~Deussen, ``Approximate image-based tree-modeling
   using particle flows,'' \emph{ACM Transactions on Graphics (TOG)}, vol.~26,

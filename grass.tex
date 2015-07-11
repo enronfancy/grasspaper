@@ -3,7 +3,7 @@
 %% V1.4a
 %% 2014/09/17
 %% by Michael Shell
-%% See:
+%% See:anastacio2006modeling
 %% http://www.michaelshell.org/
 %% for current contact information.
 %%
@@ -559,7 +559,7 @@ We intend to build a system which is able to capture grass blade from camera, re
 
 We use depth information for background masking, which is difficult and much slower with image-based methods. We extract a blob of grass blades from depth image and calculate the contour of grass blades from extracted blob. A particle-flow method is adopted to partition single blade contour from a cluster blades. According to single blade contour, a vertex matching method is used to calculate blade width and skeleton, which is used to guide the expansion and movement of grass blade in rendering and simulation respectively.\\
 
-In order to achieve real-time performance of rendering and simulation, every grass blade is modeled as a curve with no more than $64$ vertices. We expand this curve to a triangle before rendering. In our system we usually choose $16$ as the number of vertices for a single curve to guarantee high rendering and simulation performance. Thus we have to refine the grass shape we capture from camera, and extract the skeleton that could best describe the grass blade's movement, and calculate the expansion width for each vertex of the curve.\\
+In order to achieve real-time performance of rendering and simulation, every grass blade is modeled as a curve with no more than $64$ vertices. We expand this curve to a triangle before rendering. In our system we usually choose $16$ as the number of vertices for a single curve to guarantee high rendering and simulation performance. Thus we have to extract the skeleton that could best describe the grass blade's movement, calculate the expansion width for each vertex of the skeleton and refine the grass shape captured from camera.\\
 
 Our system is designed to render and simulate a very large scale grassland in which every single grass blade has individual and realistic response to collision. Therefore we apply GPU-based instancing to lower the requirement for memory and bandwidth, and pay simulation costs only when needed. Meanwhile, this is a tile-based rendering and simulation system, no per-tile data is store unless simulation for a specific tile is required. We implement the method introduced by Han et al.\cite{han2012real} to simulate our grass blade and extend the method introduced by Fan et al.\cite{fan2015simulation} to do tile management.\\
 
@@ -579,6 +579,9 @@ The most challenging part of grass modeling, rendering and simulation is caused 
 A number of works for leaf and flora reconstruction have reference value for our method. There are some previous works about using interactive method to generate or reconstruct leaf shapes and tree shapes\cite{mundermann2003modeling}\cite{okabe2005interactive}\cite{anastacio2006modeling}\cite{chen2008sketch}\cite{pirk2012plastic}.Quan et al.\cite{quan2006image} introduced a method to model plant from a dozen of images. This method could recover plant's shape automatically while relying on user to provide some hints for segmentation. Tan et al.\cite{tan2007image} proposed a method to generate 3D trees from images. They populated tree leaves from segmented source images and used shape patterns of visible branches to predict occluded branches. Tree modeling from single image was introduced afterwards\cite{tan2008single}. Yan et al.\cite{yan2014flower} came up with a method for flower reconstruction from a single image, which used a cone fitting scheme to maintains flower shape.Bradley et al.\cite{bradley2013image} presented a scale technique to compute 3D structure of foliage and extract leaf shapes.
 
 Capturing grass blade with camera has not been explored much, however plenty of researches about hair capture have been conducted. There are some similarities between hair and grass blade for their shapes and movement features. Chai et al.\cite{chai2012single} uses single image to do hair modeling, they captured hair style from image and were able to render origin hair style at different angle, with different hair materials and change hair style . Afterwards, they extended their work through user's high-level knowledge to get more accurate hair that matches image and waa physically real at the same time. By doing it they were able to finish dynamic hair simulation and interactive hair style editing, which made it possible to apply this hair manipulation in video\cite{chai2013dynamic}. A structure-aware hair capture method\cite{luo2013structure} was introduced in 2013, authors adopted a method to generate hair strand segments, set up a connection graph to guarantee hair growth to areas with missed geometry information and connected hair strands with consistent curvature. A method to capture hair using simulated examples was introduced by Hu et al.\cite{hu2014robust}, they used simulated samples as references to generate hair, and this method could be applied with unconstrained and constrained hair. They also came up with a method to capture braided hair style\cite{hu2014capturing}. A data-driven reconstruction method was adopted in this scheme and procedurally generated examples were used to fit captured hair strands. Xu et al.\cite{xu2014dynamic} introduced a space-time optimization method to capture dynamic hair. This method could faithfully capture hair strands' shape as well as spatial details.
+
+Level-of-detail(LOD) methods are typical model simplification algorithms, they are used to simplify model geometry complexity and accelerate rendering as well as simulation performance. Framework used to obtain a constant frame rate for visualization of virtual environments was introduced in 1993\cite{funkhouser1993adaptive}. Geometry-based LOD algorithms including quad remeshing methods were summarized in \cite{bommes2013quad}. Field-guided parameterization-based methods split quad remeshing into three steps including cross-field computation, integer-grid parameterization and quad mesh extraction\cite{ray2006periodic}\cite{kalberer2007quadcover}
+\cite{bommes2009mixed}\cite{zhang2010wave}. Except for those geometry-based LOD algorithms, level-of-detail was also used in simulation method. Techniques for reducing the computational complexity for simulations was introduced by Carlson et al.\cite{simulation1997Deborah}. LOD was also used for animation and rendering of prairies and particle systems\cite{o2001automatic}. Our skeleton refining method is similar to those LOD algorithms, moreover we take simulation fidelity into account while simplifying grass blade model. This leads to more accurate model for rendering and simulation at the same time and we are able to balance the trade-off between performance and quality.
 
 \section{Algorithm Overview}
 
@@ -633,7 +636,7 @@ Given the contour of single blade, we could calculate the blade skeleton. Accord
 \end{figure}
 
 \subsection{Skeleton Refining}\label{sec:Refining}
-Having the blade skeleton from contour, it can't be used in our rendering and simulation system for its large number of vertices. Therefore we come up with a skeleton refining method to reduce vertices amount according to vertices' movement similarity.\\
+Having the blade skeleton calculated from contour, it can't be used in our rendering and simulation system for its large number of vertices. Therefore we come up with a skeleton refining method to simplify our skeleton model. This skeleton refining method is similar to some LOD methods. However most LOD methods are designed for triangle meshes or quad meshes. Our skeleton is represented as a curve and more importantly, we need to take geometry fidelity as well as vertices' movement similarity into account simultaneously while doing simplification. Therefore we design this refining scheme that both geometry and simulation similarities of vertices are important factors in skeleton simplification and fidelity evaluation.\\
 
 In our system, we define any two vertices' movement similarity by the distance between them and their movement trends. For any two vertices, the smaller the distance between them is, the more similar they are. And for any two vertices, we could calculate the distance between them at any time. We could acquire the distance of two vertices every a few millisecond. Then we are able to calculate a series distance data for these two vertices. Variance is usually used to describe data stability. If distance variance is low, it means the distance between two vertices is stable. In another word, this indicate that these two vertices moves synchronously. We tend to merge vertices that moves similarly and keep vertices that have distinct movement features. Assume we acquire $n$ frames every a few milliseconds, $v_{m}^{n}$ is $m$th vertex at $n$th frame, therefore we introduce movement difference of any two vertices as:
 
@@ -716,6 +719,14 @@ We draw one line segment as two degenerate triangles and expand each knot of thi
     \label{fig:density}
 \end{figure}
 In our simulation system, $Bullet$ is used to handle collision between ground and other object. We use the simulation method introduced by \cite{han2012real} and tile management scheme introduced by \cite{fan2015simulation}. This simulation scheme is compatible with procedural animation. We are able to simulate millions of grass blades with real-time performance.
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.98\textwidth]{figs/sim2.jpg}
+    \captionof{figure}{Sequence of frames obtained through our rendering and simulation method.}
+    \label{fig:simseq}
+\end{figure*}
+
 
 \section{Implementation and Results}
 \begin{figure*}
