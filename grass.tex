@@ -764,6 +764,16 @@ In Figure.\ref{fig:results}(a) we choose a regular kind of grass which is slim ,
  \end{center}
  \end{table}
 
+In order to measure the effectiveness of our skeleton refining algorithm, we use a Hausdorff-Fit method to evaluate the refining result. We intend to measure the "distance" between refined skeleton and the original one before refining. Hausdorff distance is usually used to measure how far two subsets of a metric space are from each other\cite{wikihausdorff}. Hausdorff distance is athe maximum distance of a set to the nearest point in the other set.
+
+Hausdorff distance is usually defined as:
+
+\begin{equation}
+d_{H}(X,Y) = \max\{\sup_{x \in X }\inf_{y \in Y}d(x,y), \sup_{y \in Y}\inf_{x \in X} d(x,y)\}
+\label{eq:hausdorff}
+\end{equation}
+
+
 We have tested our algorithm to evaluate its rendering and simulation performance. In our system, we need only one draw call to rendering the whole scene, which greatly reduce CPU overhead. We are able to render a scene of $14926$ tiles in $20$ ms, in total there are $955264$ blades and over $29$ million triangles. In table.\ref{table:frameprofile}, profiling data for simulation demonstrates the effectiveness of our system. Simulation time for a single blade decreases with the increase of simulated tiles as listed in the table. This gives the evidence that our system is suitable to solve the high simulation cost problem caused by extremely large grassland.\\
 
 \textbf{Limitations.} Restricted by vertex amount of grass blade, our method has some limitations. First, small vertex amount is not enough to model jagged blades or leaves. Sharp variation in shape definitely need more vertices to remain such features. However, vertex amount is severely restricted by performance requirements, we need to balance vertex amount and performance at the same time. Meanwhile, due to the structure of grass blade we use in our system, we are not able to handle horizontally curly blades.  Secondly, since we choose to do instancing before rendering and expand grass blade at runtime, moreover our skeleton calculation by matching points will run into difficulties when dealing with asymmetric grass blades or leaves. Thirdly, the center point calculation of a grass blade cluster requires appropriate pose for camera and blade cluster, causing some accuracy problem if the poses are not proper. Fourthly, depth image capture by depth camera only support a maximum resolution of $640*480$ pixels, this will cause some problem when we want to capture some small and thin grass blades. Hopefully this problem would be solved with the development of hardware and popularity of depth camera.

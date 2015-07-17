@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.11)  12 JUL 2015 16:12
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.11)  16 JUL 2015 22:11
 entering extended mode
 **E:/grassPaper/grass.tex
 (E:/grassPaper/grass.tex
@@ -546,58 +546,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 745--746
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 767--768
+Underfull \hbox (badness 10000) in paragraph at lines 777--778
 
  []
 
 [6 <E:/grassPaper/figs/expansion.jpg> <E:/grassPaper/figs/density.png>]
-Underfull \hbox (badness 1360) in paragraph at lines 772--773
+Underfull \hbox (badness 1360) in paragraph at lines 782--783
 \OT1/ppl/m/n/9.53561 move-men-t sim-i-lar-i-ty is in-tro-duced to re-duce skele
 -ton
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--773
+Underfull \hbox (badness 10000) in paragraph at lines 782--783
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 774--775
+Underfull \hbox (badness 10000) in paragraph at lines 784--785
 
  []
 
-(E:\grassPaper\grass.bbl
+(E:\grassPaper\grass.bbl [7 <E:/grassPaper/figs/sim2.jpg>] [8 <E:/grassPaper/fi
+gs/results.jpg>]
 Missing character: There is no ¡ in font pplri7t!
 Missing character: There is no ¯ in font pplri7t!
- [7 <E:/grassPaper/figs/sim2.jpg>] [8 <E:/grassPaper/figs/results.jpg>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 97--100
 []\OT1/ppl/m/n/8.03 L. M[]undermann, P. Mac-Murchy, J. Pivo-varov, and
  []
 
-
-Underfull \vbox (badness 1221) has occurred while \output is active []
-
-)
-<figs/test3.jpg, id=52, 978.65625pt x 978.65625pt>
+) <figs/test3.jpg, id=52, 978.65625pt x 978.65625pt>
 File: figs/test3.jpg Graphic file (type jpg)
  <use figs/test3.jpg>
-Package pdftex.def Info: figs/test3.jpg used on input line 869.
+Package pdftex.def Info: figs/test3.jpg used on input line 879.
 (pdftex.def)             Requested size: 72.26114pt x 72.26114pt.
 File: figs/test3.jpg Graphic file (type jpg)
 
 <use figs/test3.jpg>
-Package pdftex.def Info: figs/test3.jpg used on input line 869.
+Package pdftex.def Info: figs/test3.jpg used on input line 879.
 (pdftex.def)             Requested size: 72.26114pt x 72.26114pt.
  [9 <E:/grassPaper/figs/test3.jpg>]
 (E:\grassPaper\grass.aux) ) 
 Here is how much of TeX's memory you used:
- 4545 strings out of 495354
- 70267 string characters out of 3183859
- 134223 words of memory out of 3000000
- 7662 multiletter control sequences out of 15000+200000
+ 4547 strings out of 495354
+ 70296 string characters out of 3183859
+ 135235 words of memory out of 3000000
+ 7664 multiletter control sequences out of 15000+200000
  48474 words of font info for 106 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,10n,38p,2091b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,10n,38p,2091b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/
 CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm
@@ -608,7 +605,7 @@ b><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/CTEX/MiKTeX/fonts/typ
 e1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb>
 <C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/CTEX/MiKTeX/fonts/type1
 /urw/palatino/uplri8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on grass.pdf (9 pages, 9901907 bytes).
+Output written on grass.pdf (9 pages, 9910531 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -329,4 +329,90 @@
   publisher={IEEE}
 }
 
-Funkhouser, Thomas A., and Carlo H. S¨¦quin. "Adaptive display algorithm for interactive frame rates during visualization of complex virtual environments." Proceedings of the 20th annual conference on Computer graphics and interactive techniques. ACM, 1993.
+@inproceedings{funkhouser1993adaptive,
+  title={Adaptive display algorithm for interactive frame rates during visualization of complex virtual environments},
+  author={Funkhouser, Thomas A and S{\'e}quin, Carlo H},
+  booktitle={Proceedings of the 20th annual conference on Computer graphics and interactive techniques},
+  pages={247--254},
+  year={1993},
+  organization={ACM}
+}
+
+@inproceedings{bommes2013quad,
+  title={Quad-Mesh Generation and Processing: A Survey},
+  author={Bommes, David and L{\'e}vy, Bruno and Pietroni, Nico and Puppo, Enrico and Silva, Claudio and Tarini, Marco and Zorin, Denis},
+  booktitle={Computer Graphics Forum},
+  volume={32},
+  number={6},
+  pages={51--76},
+  year={2013},
+  organization={Wiley Online Library}
+}
+
+@article{ray2006periodic,
+  title={Periodic global parameterization},
+  author={Ray, Nicolas and Li, Wan Chiu and L{\'e}vy, Bruno and Sheffer, Alla and Alliez, Pierre},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={25},
+  number={4},
+  pages={1460--1485},
+  year={2006},
+  publisher={ACM}
+}
+
+@inproceedings{kalberer2007quadcover,
+  title={QuadCover-Surface Parameterization using Branched Coverings},
+  author={K{\"a}lberer, Felix and Nieser, Matthias and Polthier, Konrad},
+  booktitle={Computer Graphics Forum},
+  volume={26},
+  number={3},
+  pages={375--384},
+  year={2007},
+  organization={Wiley Online Library}
+}
+
+@inproceedings{bommes2009mixed,
+  title={Mixed-integer quadrangulation},
+  author={Bommes, David and Zimmer, Henrik and Kobbelt, Leif},
+  booktitle={ACM Transactions On Graphics (TOG)},
+  volume={28},
+  number={3},
+  pages={77},
+  year={2009},
+  organization={ACM}
+}
+
+@inproceedings{zhang2010wave,
+  title={A wave-based anisotropic quadrangulation method},
+  author={Zhang, Muyang and Huang, Jin and Liu, Xinguo and Bao, Hujun},
+  booktitle={ACM Transactions on Graphics (TOG)},
+  volume={29},
+  number={4},
+  pages={118},
+  year={2010},
+  organization={ACM}
+}
+
+@inproceedings{simulation1997Deborah,
+  title={Simulation levels of detail for real-time animation},
+  author={Deborah A. Carlson and  Jessica K. Hodgins},
+  booktitle={Proc. of Graphics Interface 1997},
+  year={1997}
+}
+
+@inproceedings{o2001automatic,
+  title={Automatic simplification of particle system dynamics},
+  author={O'Brien, David and Fisher, Susan and Lin, Ming C},
+  booktitle={Computer Animation, 2001. The Fourteenth Conference on Computer Animation. Proceedings},
+  pages={210--257},
+  year={2001},
+  organization={IEEE}
+}
+
+@misc{ wiki:xxx,
+   author = "Wikipedia",
+   title = "Hausdorff distance --- Wikipedia{,} The Free Encyclopedia",
+   year = "2015",
+   url = "https://en.wikipedia.org/w/index.php?title=Hausdorff_distance&oldid=655871843",
+   note = "[Online; accessed 16-July-2015]"
+ }

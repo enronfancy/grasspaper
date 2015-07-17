@@ -230,4 +230,7 @@ T.~Sousa, ``Vegetation procedural animation and shading in crysis,'' \emph{GPU
 K.~Perlin, ``An image synthesizer,'' \emph{ACM Siggraph Computer Graphics},
   vol.~19, no.~3, pp. 287--296, 1985.
 
+\bibitem{wikihausdorff}
+Wikipedia, ``Hausdorff distance, wikipedia, the free encyclopedia,'' 2015.
+
 \end{thebibliography}

@@ -715,7 +715,7 @@ We draw one line segment as two degenerate triangles and expand each knot of thi
 \begin{figure}
     \centering
     \includegraphics[width=0.48\textwidth]{figs/density.png}
-    \captionof{figure}{Density map .}
+    \captionof{figure}{Density map used in our rendering system.}
     \label{fig:density}
 \end{figure}
 In our simulation system, $Bullet$ is used to handle collision between ground and other object. We use the simulation method introduced by \cite{han2012real} and tile management scheme introduced by \cite{fan2015simulation}. This simulation scheme is compatible with procedural animation. We are able to simulate millions of grass blades with real-time performance.
@@ -763,6 +763,8 @@ In Figure.\ref{fig:results}(a) we choose a regular kind of grass which is slim ,
  \label{table:frameprofile}
  \end{center}
  \end{table}
+
+
 
 We have tested our algorithm to evaluate its rendering and simulation performance. In our system, we need only one draw call to rendering the whole scene, which greatly reduce CPU overhead. We are able to render a scene of $14926$ tiles in $20$ ms, in total there are $955264$ blades and over $29$ million triangles. In table.\ref{table:frameprofile}, profiling data for simulation demonstrates the effectiveness of our system. Simulation time for a single blade decreases with the increase of simulated tiles as listed in the table. This gives the evidence that our system is suitable to solve the high simulation cost problem caused by extremely large grassland.\\
 
