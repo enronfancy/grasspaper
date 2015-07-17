@@ -738,6 +738,9 @@ In our simulation system, $Bullet$ is used to handle collision between ground an
 
 We implemented our system on a PC with Windows 8.1, Intel i5-4460 CPU running at $3.2$ GHz and AMD Radeon R9-270 graphic card. 4 times multi-sampling anti-aliasing is used in all experiments to guarantee satisfactory effect.\\
 
+Instancing rendering is used in our implementation in order to reduce draw call overhead for CPU. Instancing parameters are pre-generated and stored in a structure buffer before rendering. Our rendering scheme is also compatible with different LOD algorithms to at far distance.\\
+
+\subsection{Capture, Rendering and Simulation Results}
 Our system is evaluated with a variety of grass blades and leaves that can be used for large scale grassland. Our capture algorithm can capture grass blade, partition single blade contour, calculate expansion width and finish skeleton refining at interactive performance. This provide the possibility for user to capture any appropriate kind of grass or leaves and use it for large scale grassland rendering and simulation. This is especially useful for virtual-reality or augmented-reality applications where quick reconstruction of grassland with specific grass blade type is needed. \\
 
 
@@ -764,6 +767,9 @@ In Figure.\ref{fig:results}(a) we choose a regular kind of grass which is slim ,
  \end{center}
  \end{table}
 
+We have tested our algorithm to evaluate its rendering and simulation performance. In our system, we need only one draw call to rendering the whole scene, which greatly reduce CPU overhead. We are able to render a scene of $14926$ tiles in $20$ ms, in total there are $955264$ blades and over $29$ million triangles. In table.\ref{table:frameprofile}, profiling data for simulation demonstrates the effectiveness of our system. Simulation time for a single blade decreases with the increase of simulated tiles as listed in the table. This gives the evidence that our system is suitable to solve the high simulation cost problem caused by extremely large grassland.\\
+
+\subsection{Skeleton Refining Evaluation}
 In order to measure the effectiveness of our skeleton refining algorithm, we use a Hausdorff-Fit method to evaluate the refining result. We intend to measure the "distance" between refined skeleton and the original one before refining. Hausdorff distance is usually used to measure how far two subsets of a metric space are from each other\cite{wikihausdorff}. Hausdorff distance is athe maximum distance of a set to the nearest point in the other set.
 
 Hausdorff distance is usually defined as:
@@ -773,8 +779,43 @@ d_{H}(X,Y) = \max\{\sup_{x \in X }\inf_{y \in Y}d(x,y), \sup_{y \in Y}\inf_{x \i
 \label{eq:hausdorff}
 \end{equation}
 
+where $sup$ represents the supremum of the set and $inf$ represents the infimum. In our method, Hausdorff distance is used to measure the similarity of refined skeleton and the original one before refining. However, since the skeleton after refining could be a sub set of the original one, then hausdorff distance could become meaningless in that case. Therefore we eliminate vertices from original skeleton vertex set $\alpha$ if it is also in refined skeleton vertex set $\beta$, then we calculate the hausdorff distance from $\alpha$ to $\beta$. In this way we actually measure the similarity between the culled vertex set and the refined result. Algorithm for our method is demonstrated in algorithm.\ref{tbl:skeletonrefiningeva} where $d_H$ is refined hausdorff distance used in our algorithm.\\
 
-We have tested our algorithm to evaluate its rendering and simulation performance. In our system, we need only one draw call to rendering the whole scene, which greatly reduce CPU overhead. We are able to render a scene of $14926$ tiles in $20$ ms, in total there are $955264$ blades and over $29$ million triangles. In table.\ref{table:frameprofile}, profiling data for simulation demonstrates the effectiveness of our system. Simulation time for a single blade decreases with the increase of simulated tiles as listed in the table. This gives the evidence that our system is suitable to solve the high simulation cost problem caused by extremely large grassland.\\
+\floatname{algorithm}{Algorithm}
+    \begin{algorithm}
+        \caption{Skeleton Refining Evaluating}
+        \label{tbl:skeletonrefiningeva}
+        \begin{algorithmic}[1]
+            \State //SkeletonVertices = Calculated from captured result
+            \State $\alpha$ = Original skeleton vertex set
+            \State $\beta$ = Refined skeleton vertex set
+            \For{$v$ in $\alpha$}
+                \If {$v$ is $\beta$}
+                    \State {Delete $v$ from $\alpha$}
+                \EndIf
+            \EndFor
+            \State
+            \State $d_H = MIN$
+             \For{$v_1$ in $\alpha$}
+                \State $d = MAX$
+                \For{$v_2$ in $\beta$}
+                    \State $d = min(distance(v_1, v_2), d)$
+                \EndFor
+                \State $d_H = max(d, d_H)$
+             \EndFor
+
+        \end{algorithmic}
+    \end{algorithm}
+
+We extracted several frame data according to our simulation algorithm and for each frame, we are able to obtain original skeleton vertices information and refined skeleton vertices information. Then we could calculate $d_H$ as in algorithm.\ref{tbl:skeletonrefiningeva} in each frame for the results of different refining methods. From Figure.\ref{fig:evaresults} we could see that our skeleton refining algorithm always get the shortest distance between original skeleton and refined result.
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.48\textwidth]{figs/test3.jpg}
+    \captionof{figure}{Skeleton refining evaluation results: }
+    \label{fig:evaresults}
+\end{figure}
 
 \textbf{Limitations.} Restricted by vertex amount of grass blade, our method has some limitations. First, small vertex amount is not enough to model jagged blades or leaves. Sharp variation in shape definitely need more vertices to remain such features. However, vertex amount is severely restricted by performance requirements, we need to balance vertex amount and performance at the same time. Meanwhile, due to the structure of grass blade we use in our system, we are not able to handle horizontally curly blades.  Secondly, since we choose to do instancing before rendering and expand grass blade at runtime, moreover our skeleton calculation by matching points will run into difficulties when dealing with asymmetric grass blades or leaves. Thirdly, the center point calculation of a grass blade cluster requires appropriate pose for camera and blade cluster, causing some accuracy problem if the poses are not proper. Fourthly, depth image capture by depth camera only support a maximum resolution of $640*480$ pixels, this will cause some problem when we want to capture some small and thin grass blades. Hopefully this problem would be solved with the development of hardware and popularity of depth camera.
 

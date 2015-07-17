@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.11)  16 JUL 2015 22:11
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.9)  17 JUL 2015 20:23
 entering extended mode
-**E:/grassPaper/grass.tex
-(E:/grassPaper/grass.tex
+**C:/Users/BeYourself/Desktop/grassPaper/grass.tex
+(C:/Users/BeYourself/Desktop/grassPaper/grass.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
-(E:\grassPaper\IEEEtran.cls
+(C:\Users\BeYourself\Desktop\grassPaper\IEEEtran.cls
 Document Class: IEEEtran 2014/09/17 V1.8a by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -278,7 +278,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
-) (E:\grassPaper\grass.aux)
+)
+(C:\Users\BeYourself\Desktop\grassPaper\grass.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 384.
 LaTeX Font Info:    ... okay on input line 384.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 384.
@@ -357,7 +358,7 @@ LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 557
  [1{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
 
 
- <E:/grassPaper/figs/teaser1.jpg>]
+ <C:/Users/BeYourself/Desktop/grassPaper/figs/teaser1.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 558--559
 
  []
@@ -446,7 +447,7 @@ File: figs/depth_contour2.jpg Graphic file (type jpg)
 <use figs/depth_contour2.jpg>
 Package pdftex.def Info: figs/depth_contour2.jpg used on input line 610.
 (pdftex.def)             Requested size: 248.60658pt x 118.11885pt.
- [3 <E:/grassPaper/figs/depth_contour2.jpg>]
+ [3 <C:/Users/BeYourself/Desktop/grassPaper/figs/depth_contour2.jpg>]
 <figs/contour_partition2.jpg, id=20, 1081.03876pt x 532.99126pt>
 File: figs/contour_partition2.jpg Graphic file (type jpg)
 
@@ -470,8 +471,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 639--640
 
  []
 
-[4 <E:/grassPaper/figs/overview.jpg> <E:/grassPaper/figs/contour_partition2.jpg
-> <E:/grassPaper/figs/skeletoncal.jpg>]
+[4 <C:/Users/BeYourself/Desktop/grassPaper/figs/overview.jpg> <C:/Users/BeYours
+elf/Desktop/grassPaper/figs/contour_partition2.jpg> <C:/Users/BeYourself/Deskto
+p/grassPaper/figs/skeletoncal.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 658--659
 
  []
@@ -506,7 +508,7 @@ File: figs/expansion.jpg Graphic file (type jpg)
 Package pdftex.def Info: figs/expansion.jpg used on input line 710.
 (pdftex.def)             Requested size: 248.60658pt x 211.08012pt.
 
-[5 <E:/grassPaper/figs/lod3.jpg>]
+[5 <C:/Users/BeYourself/Desktop/grassPaper/figs/lod3.jpg>]
 <figs/density.png, id=36, 341.1144pt x 232.7094pt>
 File: figs/density.png Graphic file (type png)
  <use figs/density.png>
@@ -530,44 +532,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 739--740
  []
 
 
-Underfull \hbox (badness 1881) in paragraph at lines 741--742
-\OT1/ppl/m/n/9.53561 virtual-reality or augmented-reality ap-pli-ca-tion-s wher
-e
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 741--742
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--746
+Underfull \hbox (badness 1881) in paragraph at lines 744--745
+\OT1/ppl/m/n/9.53561 virtual-reality or augmented-reality ap-pli-ca-tion-s wher
+e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 744--745
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 777--778
+Underfull \hbox (badness 10000) in paragraph at lines 748--749
 
  []
 
-[6 <E:/grassPaper/figs/expansion.jpg> <E:/grassPaper/figs/density.png>]
-Underfull \hbox (badness 1360) in paragraph at lines 782--783
+
+Underfull \hbox (badness 10000) in paragraph at lines 770--771
+
+ []
+
+[6 <C:/Users/BeYourself/Desktop/grassPaper/figs/expansion.jpg> <C:/Users/BeYour
+self/Desktop/grassPaper/figs/density.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 782--783
+
+ []
+
+<figs/test3.jpg, id=44, 978.65625pt x 978.65625pt>
+File: figs/test3.jpg Graphic file (type jpg)
+ <use figs/test3.jpg>
+Package pdftex.def Info: figs/test3.jpg used on input line 815.
+(pdftex.def)             Requested size: 248.60658pt x 248.60579pt.
+
+Underfull \hbox (badness 1360) in paragraph at lines 823--824
 \OT1/ppl/m/n/9.53561 move-men-t sim-i-lar-i-ty is in-tro-duced to re-duce skele
 -ton
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 782--783
+Underfull \hbox (badness 10000) in paragraph at lines 823--824
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 784--785
+[7 <C:/Users/BeYourself/Desktop/grassPaper/figs/sim2.jpg>] [8 <C:/Users/BeYours
+elf/Desktop/grassPaper/figs/results.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 825--826
 
  []
 
-(E:\grassPaper\grass.bbl [7 <E:/grassPaper/figs/sim2.jpg>] [8 <E:/grassPaper/fi
-gs/results.jpg>]
+(C:\Users\BeYourself\Desktop\grassPaper\grass.bbl
 Missing character: There is no ¡ in font pplri7t!
 Missing character: There is no ¯ in font pplri7t!
 
@@ -575,39 +593,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--100
 []\OT1/ppl/m/n/8.03 L. M[]undermann, P. Mac-Murchy, J. Pivo-varov, and
  []
 
-) <figs/test3.jpg, id=52, 978.65625pt x 978.65625pt>
-File: figs/test3.jpg Graphic file (type jpg)
- <use figs/test3.jpg>
-Package pdftex.def Info: figs/test3.jpg used on input line 879.
-(pdftex.def)             Requested size: 72.26114pt x 72.26114pt.
+[9 <C:/Users/BeYourself/Desktop/grassPaper/figs/test3.jpg>])
 File: figs/test3.jpg Graphic file (type jpg)
 
 <use figs/test3.jpg>
-Package pdftex.def Info: figs/test3.jpg used on input line 879.
+Package pdftex.def Info: figs/test3.jpg used on input line 920.
 (pdftex.def)             Requested size: 72.26114pt x 72.26114pt.
- [9 <E:/grassPaper/figs/test3.jpg>]
-(E:\grassPaper\grass.aux) ) 
+File: figs/test3.jpg Graphic file (type jpg)
+ <use figs/test3.jpg>
+Package pdftex.def Info: figs/test3.jpg used on input line 920.
+(pdftex.def)             Requested size: 72.26114pt x 72.26114pt.
+ [10
+
+]
+(C:\Users\BeYourself\Desktop\grassPaper\grass.aux) ) 
 Here is how much of TeX's memory you used:
- 4547 strings out of 495354
- 70296 string characters out of 3183859
- 135235 words of memory out of 3000000
- 7664 multiletter control sequences out of 15000+200000
+ 4554 strings out of 495354
+ 70682 string characters out of 3183860
+ 134252 words of memory out of 3000000
+ 7671 multiletter control sequences out of 15000+200000
  48474 words of font info for 106 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,10n,38p,2091b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/
-CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmmi7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/CTEX/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pf
-b><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/CTEX/MiKTeX/fonts/typ
-e1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb>
-<C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/CTEX/MiKTeX/fonts/type1
-/urw/palatino/uplri8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on grass.pdf (9 pages, 9910531 bytes).
+ 36i,10n,38p,2116b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/CTEX/MiKTeX/fonts/enc/d
+vips/fontname/8r.enc}<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/CTEX/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy7.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
+<C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1
+/urw/palatino/uplb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C
+:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/CTEX/MiKTeX/fonts/type1/
+urw/zapfding/uzdr.pfb>
+Output written on grass.pdf (10 pages, 9916056 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
+ 104 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  68 words of extra memory for PDF output out of 10000 (max. 10000000)
 
