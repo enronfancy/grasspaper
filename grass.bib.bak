@@ -409,10 +409,10 @@
   organization={IEEE}
 }
 
-@misc{ wiki:xxx,
-   author = "Wikipedia",
-   title = "Hausdorff distance --- Wikipedia{,} The Free Encyclopedia",
-   year = "2015",
-   url = "https://en.wikipedia.org/w/index.php?title=Hausdorff_distance&oldid=655871843",
-   note = "[Online; accessed 16-July-2015]"
- }
+@misc{ wikihausdorff,
+    author = {Wikipedia},
+    title = {Hausdorff distance, Wikipedia, The Free Encyclopedia},
+    year = {2015},
+    %url = {https://en.wikipedia.org/w/index.php?title=Hausdorff\_distance\&oldid=655871843},
+    note = "[Online; accessed 16-July-2015]"
+}

@@ -230,6 +230,12 @@ T.~Sousa, ``Vegetation procedural animation and shading in crysis,'' \emph{GPU
 K.~Perlin, ``An image synthesizer,'' \emph{ACM Siggraph Computer Graphics},
   vol.~19, no.~3, pp. 287--296, 1985.
 
+\bibitem{garland1997surface}
+M.~Garland and P.~S. Heckbert, ``Surface simplification using quadric error
+  metrics,'' in \emph{Proceedings of the 24th annual conference on Computer
+  graphics and interactive techniques}.\hskip 1em plus 0.5em minus 0.4em\relax
+  ACM Press/Addison-Wesley Publishing Co., 1997, pp. 209--216.
+
 \bibitem{wikihausdorff}
 Wikipedia, ``Hausdorff distance, wikipedia, the free encyclopedia,'' 2015.
 
