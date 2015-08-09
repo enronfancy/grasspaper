@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.9)  9 AUG 2015 11:23
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.9)  9 AUG 2015 14:42
 entering extended mode
 **C:/Users/BeYourself/Desktop/grassPaper/grass.tex
 (C:/Users/BeYourself/Desktop/grassPaper/grass.tex
@@ -327,11 +327,11 @@ File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 518.
 
-<figs/teaser1.jpg, id=1, 2609.75pt x 1606.0pt>
-File: figs/teaser1.jpg Graphic file (type jpg)
- <use figs/teaser1.jpg>
-Package pdftex.def Info: figs/teaser1.jpg used on input line 518.
-(pdftex.def)             Requested size: 517.935pt x 318.71925pt.
+<figs/teaser.jpg, id=1, 2541.495pt x 778.91pt>
+File: figs/teaser.jpg Graphic file (type jpg)
+ <use figs/teaser.jpg>
+Package pdftex.def Info: figs/teaser.jpg used on input line 518.
+(pdftex.def)             Requested size: 517.935pt x 158.72676pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 518--518
 
@@ -354,17 +354,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 556--557
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 557
-.
- [1{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
-
-
- <C:/Users/BeYourself/Desktop/grassPaper/figs/teaser1.jpg>]
 Underfull \hbox (badness 1742) in paragraph at lines 558--559
 \OT1/ppl/m/n/9.53561 mod-el-ing is used in most meth-od-s where struc-tures
  []
@@ -375,6 +364,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 558--559
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 559
+.
+ [1{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
+
+
+ <C:/Users/BeYourself/Desktop/grassPaper/figs/teaser.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 560--561
 
  []
@@ -402,11 +402,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 562--563
 LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 568
 .
 
+Underfull \vbox (badness 1210) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 577--578
 
  []
 
-[2]
+
 Underfull \hbox (badness 10000) in paragraph at lines 579--580
 
  []
@@ -432,7 +435,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 581--582
 
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 583--585
 []\OT1/ppl/m/n/9.53561 Level-of-detail(LOD) meth-od-s are typ-i-cal mod-el
  []
@@ -460,11 +463,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 583--585
 
  []
 
-<figs/overview.jpg, id=14, 2386.9175pt x 898.35625pt>
+<figs/overview.jpg, id=14, 1910.13625pt x 1531.7225pt>
 File: figs/overview.jpg Graphic file (type jpg)
  <use figs/overview.jpg>
 Package pdftex.def Info: figs/overview.jpg used on input line 591.
-(pdftex.def)             Requested size: 517.935pt x 194.92484pt.
+(pdftex.def)             Requested size: 517.935pt x 415.32352pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 596--597
 
@@ -504,14 +507,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 606--607
 
  []
 
-[3] <figs/depth_contour2.jpg, id=19, 1090.0725pt x 517.935pt>
+<figs/depth_contour2.jpg, id=15, 1090.0725pt x 517.935pt>
 File: figs/depth_contour2.jpg Graphic file (type jpg)
 
 <use figs/depth_contour2.jpg>
 Package pdftex.def Info: figs/depth_contour2.jpg used on input line 610.
 (pdftex.def)             Requested size: 248.60658pt x 118.11885pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [3]
+Underfull \vbox (badness 5203) has occurred while \output is active []
 
 
 <figs/contour_partition2.jpg, id=20, 1081.03876pt x 532.99126pt>
@@ -527,9 +530,7 @@ File: figs/skeletoncal.jpg Graphic file (type jpg)
 <use figs/skeletoncal.jpg>
 Package pdftex.def Info: figs/skeletoncal.jpg used on input line 633.
 (pdftex.def)             Requested size: 233.06917pt x 168.64359pt.
- [4 <C:/Users/BeYourself/Desktop/grassPaper/figs/overview.jpg> <C:/Users/BeYour
-self/Desktop/grassPaper/figs/depth_contour2.jpg> <C:/Users/BeYourself/Desktop/g
-rassPaper/figs/contour_partition2.jpg>]
+
 Underfull \hbox (badness 1953) in paragraph at lines 639--640
 \OT1/ppl/m/n/9.53561 de-sign this re-fin-ing scheme that both ge-om-e-try and
  []
@@ -539,7 +540,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 639--640
 
  []
 
-
+[4 <C:/Users/BeYourself/Desktop/grassPaper/figs/overview.jpg> <C:/Users/BeYours
+elf/Desktop/grassPaper/figs/depth_contour2.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 658--659
 
  []
@@ -563,12 +565,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 704--705
 
  []
 
-
+[5 <C:/Users/BeYourself/Desktop/grassPaper/figs/contour_partition2.jpg> <C:/Use
+rs/BeYourself/Desktop/grassPaper/figs/skeletoncal.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 706--707
 
  []
 
-[5 <C:/Users/BeYourself/Desktop/grassPaper/figs/skeletoncal.jpg>]
 <figs/expansion.jpg, id=35, 531.9875pt x 451.6875pt>
 File: figs/expansion.jpg Graphic file (type jpg)
  <use figs/expansion.jpg>
@@ -598,6 +600,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 739--740
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 741--742
 
  []
@@ -613,14 +618,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 744--745
 
  []
 
-
+[6 <C:/Users/BeYourself/Desktop/grassPaper/figs/lod3.jpg> <C:/Users/BeYourself/
+Desktop/grassPaper/figs/expansion.jpg> <C:/Users/BeYourself/Desktop/grassPaper/
+figs/density.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 748--749
 
  []
 
-[6 <C:/Users/BeYourself/Desktop/grassPaper/figs/lod3.jpg> <C:/Users/BeYourself/
-Desktop/grassPaper/figs/expansion.jpg> <C:/Users/BeYourself/Desktop/grassPaper/
-figs/density.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 770--771
 
  []
@@ -635,9 +640,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 789--790
 
  []
 
-[7 <C:/Users/BeYourself/Desktop/grassPaper/figs/sim2.jpg> <C:/Users/BeYourself/
-Desktop/grassPaper/figs/distance.jpg>] [8 <C:/Users/BeYourself/Desktop/grassPap
-er/figs/results.jpg>]
+[7 <C:/Users/BeYourself/Desktop/grassPaper/figs/sim2.jpg>] [8 <C:/Users/BeYours
+elf/Desktop/grassPaper/figs/results.jpg>]
 Underfull \hbox (badness 2042) in paragraph at lines 817--818
 \OT1/ppl/m/n/9.53561 schemes used for skele-ton re-fin-ing. Ran-dom method
  []
@@ -663,7 +667,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 830--831
 
  []
 
-[9 <C:/Users/BeYourself/Desktop/grassPaper/figs/simcom.jpg>]
+
+Underfull \vbox (badness 4013) has occurred while \output is active []
+
+ [9 <C:/Users/BeYourself/Desktop/grassPaper/figs/distance.jpg> <C:/Users/BeYour
+self/Desktop/grassPaper/figs/simcom.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 832--833
 
  []
@@ -692,8 +700,8 @@ Package pdftex.def Info: figs/test3.jpg used on input line 927.
 Desktop\grassPaper\grass.aux) ) 
 Here is how much of TeX's memory you used:
  4566 strings out of 495354
- 70904 string characters out of 3183860
- 137265 words of memory out of 3000000
+ 70899 string characters out of 3183860
+ 136265 words of memory out of 3000000
  7681 multiletter control sequences out of 15000+200000
  48474 words of font info for 106 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
@@ -709,7 +717,7 @@ blic/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
 pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/CTEX/MiKTeX/fonts/t
 ype1/urw/palatino/uplri8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb
 >
-Output written on grass.pdf (11 pages, 10202118 bytes).
+Output written on grass.pdf (11 pages, 5590694 bytes).
 PDF statistics:
  109 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

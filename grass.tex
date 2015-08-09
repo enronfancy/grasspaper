@@ -490,7 +490,7 @@ E-mail: shengbin@cs.sjtu.edu.cn}
 % in the abstract or keywords.
 \IEEEtitleabstractindextext{%
 \begin{abstract}
-Grass is a very import element of nature, however creating, rendering and simulating a large scale grassland is not easy due to extremely high computation complexity and large amount of data needed for simulation and rendering. Common sense tells us grass blades so simple that it is not difficult to set up a grass blade model for rendering and simulation, yet there are numerous kinds of grass blades in this world and it's not possible for any system to store all kinds of grass blades in advance. Capturing grass blade with interactive camera can be an intuitive solution for this problem. We provide a method that can capture grass blade shapes with a depth camera, render large scale grassland efficiently and simulate this grassland with individual response for each single blade on the fly.
+Grass is a very import element of nature, however creating, rendering and simulating a large scale grassland is not easy due to extremely high computation complexity and large amount of data needed for simulation and rendering. Grass modeling does not usually draw enough attention due to its simple structure while it still remains a problem to set up a proper grass blade model for rendering and simulation. Moreover there are numerous categories of grass blades in this world and it's not possible for any system to store all kinds of grass blades in advance. Capturing grass blade with interactive camera can be an intuitive solution for this problem. We provide a method that can capture grass blade shapes with a depth camera, render large scale grassland efficiently and simulate this grassland with individual response for each single blade on the fly. 
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
@@ -510,8 +510,8 @@ Grass, Capture, Render, Simulation, GPU
 \maketitle
 \begin{center}
     \centering
-    \includegraphics[width=1.0\textwidth]{figs/teaser1.jpg}
-    \captionof{figure}{Large scale grassland with our method: (a) grass detail in the scene; (b) front view of large scale grassland; (c)  grass-ball interaction handling in our system; (d) bird's view of test scene.\\\\
+    \includegraphics[width=1.0\textwidth]{figs/teaser.jpg}
+    \captionof{figure}{Large scale grassland with our method: (a) grass detail in the scene; (b) front view of large scale grassland in test scene.\\\\
     }
     \label{fig:teaser}
 \end{center}%
@@ -589,7 +589,7 @@ Level-of-detail(LOD) methods are typical model simplification algorithms, they a
 \begin{figure*}
     \centering
     \includegraphics[width=1.0\textwidth]{figs/overview.jpg}
-    \captionof{figure}{Overview of system pipeline:(a) a cluster of grass blades and depth depth image captured with camera, those are raw data in our system; (b) extracted contour(top), partitioned contour for single blade marked with different color respectively(bottom);(c) skeleton and expansion width calculation(bottom); (d) skeleton refining process using a idealized blade skeleton with 128 vertices, with different refining levels that reduce skeleton vertices down to 64,32 and 16 vertices; (e) instancing scheme: using refined skeleton to generate a grass patch, every tile refer to a subset of grass blade in the patch, expand skeleton to grass according to expansion width; (f) rendering and simulation.}
+    \captionof{figure}{Overview of system pipeline:(a) a cluster of grass blades and depth depth image captured with camera, those are raw data in our system; (b) extracted contour(top), partitioned contour for a single blade marked with different color respectively(bottom);(c) skeleton and expansion width calculation; (d) skeleton refining process with a initial blade skeleton with 128 vertices, skeleton vertices are reduced down to 64,32 and 16 with different refining levels ; (e) input skeleton and expansion width that could describe the grass blade; (f) instancing scheme:using refined skeleton to generate a grass patch, randomize grass blades' length, orientation and location in a tile; (g) every tile refer to a subset of grass blades in the patch; (h) expand skeleton to grass according to expansion width at run time, render the whole scene and do simulation.}
     \label{fig:overview}
 \end{figure*}
 
