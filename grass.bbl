@@ -21,6 +21,15 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{wang2005dynamic}
+C.~Wang, Z.~Wang, Q.~Zhou, C.~Song, Y.~Guan, and Q.~Peng, ``Dynamic modeling
+  and rendering of grass wagging in wind,'' \emph{Computer Animation and
+  Virtual Worlds}, vol.~16, no. 3-4, pp. 377--389, 2005.
+
+\bibitem{belyaev2011real}
+S.~Belyaev, I.~Laevsky, and V.~Chukanov, ``Real-time animation, collision and
+  rendering of grassland,'' \emph{Proc. GraphiCon¡¯2011}, pp. 1--4, 2011.
+
 \bibitem{han2012real}
 D.~Han and T.~Harada, ``Real-time hair simulation with efficient hair style
   preservation,'' \emph{vriphys12-proc}, pp. 45--51, 2012.
