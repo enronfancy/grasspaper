@@ -436,3 +436,11 @@
   year={2005},
   publisher={Wiley Online Library}
 }
+
+@article{belyaev2011real,
+  title={Real-time Animation, Collision and Rendering of Grassland},
+  author={Belyaev, Sergey and Laevsky, Igor and Chukanov, Vyacheslav},
+  journal={Proc. GraphiCon¡¯2011},
+  pages={1--4},
+  year={2011}
+}

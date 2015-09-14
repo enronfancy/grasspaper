@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.9)  15 AUG 2015 22:30
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.9)  5 SEP 2015 20:03
 entering extended mode
 **C:/Users/BeYourself/Desktop/grassPaper/grass.tex
 (C:/Users/BeYourself/Desktop/grassPaper/grass.tex
@@ -400,16 +400,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 564--565
 LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 568
 .
 
+Underfull \hbox (badness 1527) in paragraph at lines 577--578
+\OT1/ppl/m/n/9.53561 per-for-mance. Image-based method was used in grass
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 577--578
+\OT1/ppl/m/n/9.53561 tex-ture func-tion for grass. Through length p-re-serv-ing
+
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 577--578
+\OT1/ppl/m/n/9.53561 grass blade and al-pha test to im-ple-men-t trans-par-en-t
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 577--578
 
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 579--580
 
  []
 
-[2]
+
 Underfull \hbox (badness 1789) in paragraph at lines 581--582
 []\OT1/ppl/m/n/9.53561 Capturing grass blade with cam-er-a has not been
  []
@@ -431,26 +448,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 581--582
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 583--585
-[]\OT1/ppl/m/n/9.53561 Level-of-detail(LOD) meth-od-s are typ-i-cal mod-el
- []
-
-
-Underfull \hbox (badness 3612) in paragraph at lines 583--585
-\OT1/ppl/m/n/9.53561 sim-pli-fi-ca-tion al-go-rithm-s, they are used to sim-pli
--fy
- []
-
-
-Underfull \hbox (badness 2503) in paragraph at lines 583--585
-\OT1/ppl/m/n/9.53561 mod-el ge-om-e-try com-plex-i-ty and ac-cel-er-ate ren-der
--ing
- []
-
-
-Underfull \hbox (badness 1715) in paragraph at lines 583--585
-\OT1/ppl/m/n/9.53561 re-fin-ing method is sim-i-lar to those LOD al-go-rithm-s,
-
+Underfull \hbox (badness 3623) in paragraph at lines 583--585
+\OT1/ppl/m/n/9.53561 level-of-detail was al-so used in sim-u-la-tion method.
  []
 
 
@@ -458,11 +457,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 583--585
 
  []
 
-<figs/overview.jpg, id=14, 1910.13625pt x 1531.7225pt>
-File: figs/overview.jpg Graphic file (type jpg)
- <use figs/overview.jpg>
-Package pdftex.def Info: figs/overview.jpg used on input line 591.
-(pdftex.def)             Requested size: 517.935pt x 415.32352pt.
+<figs/overview2.jpg, id=14, 3767.07375pt x 1525.7pt>
+File: figs/overview2.jpg Graphic file (type jpg)
+ <use figs/overview2.jpg>
+Package pdftex.def Info: figs/overview2.jpg used on input line 591.
+(pdftex.def)             Requested size: 517.935pt x 209.7553pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 596--597
 
@@ -474,17 +473,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 598--599
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 600--601
-\OT1/ppl/m/n/9.53561 re-fin-ing al-go-rith-m to do sim-pli-fi-ca-tion. This pro
--cess
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 600--601
 
  []
 
-
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 602--603
 
  []
@@ -502,171 +495,227 @@ Underfull \hbox (badness 10000) in paragraph at lines 606--607
 
  []
 
-[3] <figs/depth_contour2.jpg, id=19, 1090.0725pt x 517.935pt>
+<figs/depth_contour2.jpg, id=18, 1090.0725pt x 517.935pt>
 File: figs/depth_contour2.jpg Graphic file (type jpg)
 
 <use figs/depth_contour2.jpg>
 Package pdftex.def Info: figs/depth_contour2.jpg used on input line 610.
 (pdftex.def)             Requested size: 248.60658pt x 118.11885pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 1715) in paragraph at lines 615--616
+\OT1/ppl/m/n/9.53561 blades and it-s ex-tract-ed con-tour. We just use depth
+ []
 
 
-Overfull \vbox (12.56209pt too high) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 615--616
+
+ []
 
 
-[4 <C:/Users/BeYourself/Desktop/grassPaper/figs/overview.jpg> <C:/Users/BeYours
-elf/Desktop/grassPaper/figs/depth_contour2.jpg>]
-<figs/contour_partition2.jpg, id=23, 1081.03876pt x 532.99126pt>
+Underfull \hbox (badness 10000) in paragraph at lines 617--618
+
+ []
+
+[4 <C:/Users/BeYourself/Desktop/grassPaper/figs/overview2.jpg> <C:/Users/BeYour
+self/Desktop/grassPaper/figs/depth_contour2.jpg>]
+<figs/contour_partition2.jpg, id=22, 1081.03876pt x 532.99126pt>
 File: figs/contour_partition2.jpg Graphic file (type jpg)
 
 <use figs/contour_partition2.jpg>
-Package pdftex.def Info: figs/contour_partition2.jpg used on input line 623.
+Package pdftex.def Info: figs/contour_partition2.jpg used on input line 621.
 (pdftex.def)             Requested size: 248.60658pt x 122.56914pt.
 
-<figs/skeletoncal.jpg, id=24, 1321.93875pt x 956.57375pt>
+<figs/skeletoncal.jpg, id=23, 1321.93875pt x 956.57375pt>
 File: figs/skeletoncal.jpg Graphic file (type jpg)
 
 <use figs/skeletoncal.jpg>
-Package pdftex.def Info: figs/skeletoncal.jpg used on input line 633.
+Package pdftex.def Info: figs/skeletoncal.jpg used on input line 630.
 (pdftex.def)             Requested size: 233.06917pt x 168.64359pt.
 
-Underfull \hbox (badness 1953) in paragraph at lines 639--640
+Underfull \hbox (badness 1953) in paragraph at lines 636--637
 \OT1/ppl/m/n/9.53561 de-sign this re-fin-ing scheme that both ge-om-e-try and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 639--640
+Underfull \hbox (badness 10000) in paragraph at lines 636--637
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 658--659
+Underfull \hbox (badness 10000) in paragraph at lines 655--656
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 660--661
+Underfull \hbox (badness 10000) in paragraph at lines 657--658
 
  []
 
-<figs/lod3.jpg, id=25, 1194.4625pt x 1079.03125pt>
+<figs/lod3.jpg, id=24, 1194.4625pt x 1079.03125pt>
 File: figs/lod3.jpg Graphic file (type jpg)
  <use figs/lod3.jpg>
-Package pdftex.def Info: figs/lod3.jpg used on input line 696.
+Package pdftex.def Info: figs/lod3.jpg used on input line 693.
 (pdftex.def)             Requested size: 248.60658pt x 224.5781pt.
 Missing character: There is no £ in font pplr7t!
 Missing character: There is no ¬ in font pplr7t!
 Missing character: There is no £ in font pplr7t!
 Missing character: There is no ¬ in font pplr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 704--705
+Underfull \hbox (badness 10000) in paragraph at lines 729--730
 
  []
 
 [5 <C:/Users/BeYourself/Desktop/grassPaper/figs/contour_partition2.jpg> <C:/Use
 rs/BeYourself/Desktop/grassPaper/figs/skeletoncal.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+Underfull \hbox (badness 10000) in paragraph at lines 731--732
 
  []
 
 <figs/expansion.jpg, id=34, 531.9875pt x 451.6875pt>
 File: figs/expansion.jpg Graphic file (type jpg)
  <use figs/expansion.jpg>
-Package pdftex.def Info: figs/expansion.jpg used on input line 710.
+Package pdftex.def Info: figs/expansion.jpg used on input line 735.
 (pdftex.def)             Requested size: 248.60658pt x 211.08012pt.
 
 <figs/density.png, id=35, 341.1144pt x 232.7094pt>
 File: figs/density.png Graphic file (type png)
  <use figs/density.png>
-Package pdftex.def Info: figs/density.png used on input line 717.
+Package pdftex.def Info: figs/density.png used on input line 742.
 (pdftex.def)             Requested size: 248.60658pt x 169.59947pt.
+
+Underfull \hbox (badness 1424) in paragraph at lines 746--747
+\OT1/ppl/m/n/9.53561 scheme in-tro-duced by [4]. This sim-u-la-tion scheme is
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 746--747
+\OT1/ppl/m/n/9.53561 com-pat-i-ble with pro-ce-du-ral an-i-ma-tion. We are able
+
+ []
+
+
+Underfull \hbox (badness 3302) in paragraph at lines 746--747
+\OT1/ppl/m/n/9.53561 to sim-u-late mil-lion-s of grass blades with real-time
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 746--747
+
+ []
 
 <figs/sim2.jpg, id=37, 1284.8pt x 643.40375pt>
 File: figs/sim2.jpg Graphic file (type jpg)
  <use figs/sim2.jpg>
-Package pdftex.def Info: figs/sim2.jpg used on input line 725.
+Package pdftex.def Info: figs/sim2.jpg used on input line 750.
 (pdftex.def)             Requested size: 507.57408pt x 254.18587pt.
 
 <figs/results.jpg, id=38, 1771.61874pt x 2662.94875pt>
 File: figs/results.jpg Graphic file (type jpg)
  <use figs/results.jpg>
-Package pdftex.def Info: figs/results.jpg used on input line 734.
-(pdftex.def)             Requested size: 414.33005pt x 569.02837pt.
+Package pdftex.def Info: figs/results.jpg used on input line 759.
+(pdftex.def)             Requested size: 414.34956pt x 622.7862pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--740
+Underfull \hbox (badness 10000) in paragraph at lines 764--765
 
  []
 
 [6 <C:/Users/BeYourself/Desktop/grassPaper/figs/lod3.jpg> <C:/Users/BeYourself/
 Desktop/grassPaper/figs/expansion.jpg> <C:/Users/BeYourself/Desktop/grassPaper/
 figs/density.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 741--742
+Underfull \hbox (badness 10000) in paragraph at lines 766--767
 
  []
 
 
-Underfull \hbox (badness 1881) in paragraph at lines 744--745
-\OT1/ppl/m/n/9.53561 virtual-reality or augmented-reality ap-pli-ca-tion-s wher
-e
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 744--745
+Underfull \hbox (badness 10000) in paragraph at lines 768--769
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--749
+Underfull \hbox (badness 10000) in paragraph at lines 771--772
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 770--771
+Underfull \hbox (badness 10000) in paragraph at lines 774--775
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 796--797
 
  []
 
 [7 <C:/Users/BeYourself/Desktop/grassPaper/figs/sim2.jpg>] [8 <C:/Users/BeYours
 elf/Desktop/grassPaper/figs/results.jpg>]
+Underfull \hbox (badness 1502) in paragraph at lines 799--800
+\OT1/ppl/m/n/9.53561 mea-sure the "dis-tance" be-tween re-fined skele-ton and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--800
+
+ []
+
 <figs/distance.jpg, id=51, 722.7pt x 681.54625pt>
 File: figs/distance.jpg Graphic file (type jpg)
  <use figs/distance.jpg>
-Package pdftex.def Info: figs/distance.jpg used on input line 777.
+Package pdftex.def Info: figs/distance.jpg used on input line 803.
 (pdftex.def)             Requested size: 207.17084pt x 195.37625pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--790
+Underfull \hbox (badness 10000) in paragraph at lines 815--816
 
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 817--818
+Underfull \hbox (badness 2042) in paragraph at lines 843--844
 \OT1/ppl/m/n/9.53561 schemes used for skele-ton re-fin-ing. Ran-dom method
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 817--818
+Underfull \hbox (badness 10000) in paragraph at lines 843--844
 
  []
 
 <figs/simcom.jpg, id=52, 875.27pt x 711.65875pt>
 File: figs/simcom.jpg Graphic file (type jpg)
  <use figs/simcom.jpg>
-Package pdftex.def Info: figs/simcom.jpg used on input line 822.
+Package pdftex.def Info: figs/simcom.jpg used on input line 848.
 (pdftex.def)             Requested size: 248.60658pt x 202.12987pt.
- [9 <C:/Users/BeYourself/Desktop/grassPaper/figs/distance.jpg> <C:/Users/BeYour
-self/Desktop/grassPaper/figs/simcom.jpg>]
-Underfull \hbox (badness 1360) in paragraph at lines 830--831
+
+Underfull \hbox (badness 1622) in paragraph at lines 853--854
+[]\OT1/ppl/b/n/9.53561 Limitations. \OT1/ppl/m/n/9.53561 Re-strict-ed by ver-te
+x amoun-t of grass
+ []
+
+
+Underfull \hbox (badness 1874) in paragraph at lines 853--854
+\OT1/ppl/m/n/9.53561 to re-main such fea-tures. How-ev-er, ver-tex amoun-t is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 853--854
+
+ []
+
+[9 <C:/Users/BeYourself/Desktop/grassPaper/figs/distance.jpg>]
+Underfull \hbox (badness 1360) in paragraph at lines 856--857
 \OT1/ppl/m/n/9.53561 move-men-t sim-i-lar-i-ty is in-tro-duced to re-duce skele
 -ton
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 830--831
+Underfull \hbox (badness 10000) in paragraph at lines 856--857
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 832--833
+Underfull \hbox (badness 10000) in paragraph at lines 858--859
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 860--861
 
  []
 
@@ -676,44 +725,46 @@ Missing character: There is no ¯ in font pplri7t!
 Missing character: There is no ¡ in font pplri7t!
 Missing character: There is no ¯ in font pplri7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--109
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
 []\OT1/ppl/m/n/8.03 L. M[]undermann, P. Mac-Murchy, J. Pivo-varov, and
  []
 
-[10]) <figs/test3.jpg, id=60, 978.65625pt x 978.65625pt>
+[10 <C:/Users/BeYourself/Desktop/grassPaper/figs/simcom.jpg>]
+Underfull \vbox (badness 1221) has occurred while \output is active []
+
+)
+<figs/test3.jpg, id=60, 978.65625pt x 978.65625pt>
 File: figs/test3.jpg Graphic file (type jpg)
  <use figs/test3.jpg>
-Package pdftex.def Info: figs/test3.jpg used on input line 927.
+Package pdftex.def Info: figs/test3.jpg used on input line 953.
 (pdftex.def)             Requested size: 72.26114pt x 72.26114pt.
 File: figs/test3.jpg Graphic file (type jpg)
 
 <use figs/test3.jpg>
-Package pdftex.def Info: figs/test3.jpg used on input line 927.
+Package pdftex.def Info: figs/test3.jpg used on input line 953.
 (pdftex.def)             Requested size: 72.26114pt x 72.26114pt.
- [11
-
- <C:/Users/BeYourself/Desktop/grassPaper/figs/test3.jpg>] (C:\Users\BeYourself\
-Desktop\grassPaper\grass.aux) ) 
+ [11 <C:/Users/BeYourself/Desktop/grassPaper/figs/test3.jpg>] (C:\Users\BeYours
+elf\Desktop\grassPaper\grass.aux) ) 
 Here is how much of TeX's memory you used:
- 4568 strings out of 495354
- 70933 string characters out of 3183860
- 135273 words of memory out of 3000000
- 7683 multiletter control sequences out of 15000+200000
+ 4569 strings out of 495354
+ 70954 string characters out of 3183860
+ 135278 words of memory out of 3000000
+ 7684 multiletter control sequences out of 15000+200000
  48474 words of font info for 106 fonts, out of 3000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,10n,38p,2318b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}
-<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmmi7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTE
-X/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/CTEX/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
-7.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/CTEX/MiKTeX/fonts
-/type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.
-pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/CTEX/MiKTeX/fonts/t
-ype1/urw/palatino/uplri8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb
->
-Output written on grass.pdf (11 pages, 5591913 bytes).
+ 36i,10n,38p,2689b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.
+enc}<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmmi7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
+/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/CTEX/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmsy7.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/CTEX/MiKTeX/f
+onts/type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/upl
+b8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/CTEX/MiKTeX/fon
+ts/type1/urw/palatino/uplri8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/zapfding/uzdr
+.pfb>
+Output written on grass.pdf (11 pages, 5824352 bytes).
 PDF statistics:
  109 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

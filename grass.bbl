@@ -81,11 +81,21 @@ K.~Boulanger, S.~N. Pattanaik, and K.~Bouatouch, ``Rendering grass in real time
   with dynamic lighting,'' \emph{IEEE Computer Graphics and Applications},
   no.~1, pp. 32--41, 2009.
 
+\bibitem{wu2012using}
+W.~Wu, P.-A. Heng, E.~Wu \emph{et~al.}, ``Using time-varying texels to simulate
+  withering grassland,'' \emph{Computer Graphics and Applications, IEEE},
+  vol.~32, no.~1, pp. 78--86, 2012.
+
 \bibitem{guerraz2003procedural}
 S.~Guerraz, F.~Perbet, D.~Raulo, F.~Faure, and M.-P. Cani, ``A procedural
   approach to animate interactive natural sceneries,'' in \emph{Computer
   Animation and Social Agents, 2003. 16th International Conference on}.\hskip
   1em plus 0.5em minus 0.4em\relax IEEE, 2003, pp. 73--78.
+
+\bibitem{qiu2012dynamic}
+H.~Qiu, L.~Chen, J.~X. Chen, and Y.~Liu, ``Dynamic simulation of grass field
+  swaying in wind,'' \emph{Journal of Software}, vol.~7, no.~2, pp. 431--439,
+  2012.
 
 \bibitem{chen2010real}
 K.~Chen and H.~Johan, ``Real-time continuum grass,'' in \emph{Virtual Reality
@@ -96,11 +106,6 @@ K.~Chen and H.~Johan, ``Real-time continuum grass,'' in \emph{Virtual Reality
 N.~Hempe, J.~Rossmann, and B.~Sondermann, ``Generation and rendering of
   interactive ground vegetation for real-time testing and validation of
   computer vision algorithms,'' 2013.
-
-\bibitem{wu2012using}
-W.~Wu, P.-A. Heng, E.~Wu \emph{et~al.}, ``Using time-varying texels to simulate
-  withering grassland,'' \emph{Computer Graphics and Applications, IEEE},
-  vol.~32, no.~1, pp. 78--86, 2012.
 
 \bibitem{mundermann2003modeling}
 L.~M{\"u}ndermann, P.~MacMurchy, J.~Pivovarov, and P.~Prusinkiewicz, ``Modeling

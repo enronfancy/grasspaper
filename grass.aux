@@ -14,13 +14,17 @@
 \citation{meyer1998interactive}
 \citation{bakay2002real}
 \citation{shah2005real}
+\citation{wang2005dynamic}
 \citation{boulanger2009rendering}
+\citation{wu2012using}
 \citation{guerraz2003procedural}
+\citation{belyaev2011real}
+\citation{qiu2012dynamic}
 \citation{chen2010real}
 \citation{hempe2013generation}
-\citation{wu2012using}
 \citation{han2012real}
 \citation{fan2015simulation}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}}
 \citation{mundermann2003modeling}
 \citation{okabe2005interactive}
 \citation{anastacio2006modeling}
@@ -31,7 +35,6 @@
 \citation{tan2008single}
 \citation{yan2014flower}
 \citation{bradley2013image}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}}
 \citation{chai2012single}
 \citation{chai2013dynamic}
 \citation{luo2013structure}
@@ -47,32 +50,30 @@
 \citation{simulation1997Deborah}
 \citation{o2001automatic}
 \citation{neubert2007approximate}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Algorithm Overview}{3}}
 \citation{fan2015simulation}
 \citation{sousa2007vegetation}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Algorithm Overview}{3}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Algorithm Details}{3}}
-\newlabel{sec:detail}{{4}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Blade Capture}{3}}
-\newlabel{sec:capture}{{4.1}{3}}
 \citation{neubert2007approximate}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Overview of system pipeline:(a) a cluster of grass blades and depth depth image captured with camera, those are raw data in our system; (b) extracted contour(top), partitioned contour for a single blade marked with different color respectively(bottom);(c) skeleton and expansion width calculation; (d) skeleton refining process with a initial blade skeleton with 128 vertices, skeleton vertices are reduced down to 64,32 and 16 with different refining levels ; (e) input skeleton and expansion width that could describe the grass blade; (f) instancing scheme:using refined skeleton to generate a grass patch, randomize grass blades' length, orientation and location in a tile; (g) every tile refer to a subset of grass blades in the patch; (h) expand skeleton to grass according to expansion width at run time, render the whole scene and do simulation.\relax }}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Overview of system pipeline: First capture a cluster of grass blades and obtain depth depth image, those are raw data in our system; then extract blade contour and partition the contour for a single blade marked with different color respectively; next calculate skeleton and expansion width; then simplify and refine calculated skeleton starting with 128 vertices, skeleton vertices are reduced down to 64, 32 and 16 with different refining levels; second line: generate a grass patch, randomize grass blades orientation and location in a tile; then assign grass data for each tile from the patch; finally render the scene with our captured and simplified blade mesh.\relax }}{4}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:overview}{{2}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Algorithm Details}{4}}
+\newlabel{sec:detail}{{4}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Blade Capture and Partition}{4}}
+\newlabel{sec:capture}{{4.1}{4}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces (a)Depth image and (b)extracted contour\relax }}{4}}
 \newlabel{fig:depthimage}{{3}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Single Blade Partition}{4}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Single blade partition: Given the (a)contour of a blade cluster,(b)calculate the center point and use particle-flow method to partition each single blade.\relax }}{5}}
 \newlabel{fig:partition}{{4}{5}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Skeleton calculation by match symmetrical points on contour.(a) capture single blade contour points, points index increases from bottom left to bottom right;(b) Matching symmetrical points in the contour.\relax }}{5}}
 \newlabel{fig:skeleton}{{5}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Skeleton and Expansion Width Calculation}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Skeleton Refining}{5}}
-\newlabel{sec:Refining}{{4.4}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Skeleton Refining}{5}}
+\newlabel{sec:Refining}{{4.2}{5}}
 \newlabel{eq:similarityeq}{{1}{5}}
 \newlabel{eq:distance}{{2}{5}}
 \newlabel{eq:variance}{{3}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Rendering and Simulation}{5}}
-\newlabel{sec:render}{{4.5}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Rendering and Simulation}{5}}
+\newlabel{sec:render}{{4.3}{5}}
 \citation{sousa2007vegetation}
 \citation{perlin1985image}
 \citation{han2012real}
@@ -85,24 +86,22 @@
 \newlabel{fig:expasion}{{7}{6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Density map used in our rendering system.\relax }}{6}}
 \newlabel{fig:density}{{8}{6}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Implementation and Results}{6}}
-\citation{garland1997surface}
-\citation{wikihausdorff}
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Sequence of frames obtained through our rendering and simulation method.\relax }}{7}}
 \newlabel{fig:simseq}{{9}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Implementation and Results}{7}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Capture, Rendering and Simulation Results}{7}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Simulation time data with different activated tiles, objects.\relax }}{7}}
 \newlabel{table:frameprofile}{{1}{7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Skeleton Refining Evaluation}{7}}
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Experiment results:(a) regular slim and thin grass blade ;(b) blade similar to most leaves, blade edge is quadratic curve like; (c) blade that is slender than the first one, blade edge is still regular (d) bamboo leaf which is thin, its edge is very smooth and flat except for its top and root; (e) leaf with shape variation, it has a very sharp and narrow tip.\relax }}{8}}
 \newlabel{fig:results}{{10}{8}}
+\citation{garland1997surface}
+\citation{wikihausdorff}
 \@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Distance between refined skeleton and original skeleton calculated from blade contour.\relax }}{9}}
 \newlabel{fig:distance}{{11}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Skeleton Refining Evaluation}{9}}
 \newlabel{eq:hausdorff}{{4}{9}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Skeleton Refining Evaluating\relax }}{9}}
 \newlabel{tbl:skeletonrefiningeva}{{2}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Skeleton refining evaluation results: our methods, random method, mean method and geometry-based method. \relax }}{9}}
-\newlabel{fig:evaresults}{{12}{9}}
 \bibstyle{IEEEtran}
 \bibdata{IEEEabrv,grass}
 \bibcite{wang2005dynamic}{1}
@@ -117,41 +116,44 @@
 \bibcite{bakay2002real}{10}
 \bibcite{shah2005real}{11}
 \bibcite{boulanger2009rendering}{12}
-\bibcite{guerraz2003procedural}{13}
-\bibcite{chen2010real}{14}
-\bibcite{hempe2013generation}{15}
-\bibcite{wu2012using}{16}
-\bibcite{mundermann2003modeling}{17}
-\bibcite{okabe2005interactive}{18}
-\bibcite{anastacio2006modeling}{19}
-\bibcite{chen2008sketch}{20}
-\bibcite{pirk2012plastic}{21}
-\bibcite{quan2006image}{22}
-\bibcite{tan2007image}{23}
-\bibcite{tan2008single}{24}
-\bibcite{yan2014flower}{25}
-\bibcite{bradley2013image}{26}
-\bibcite{chai2012single}{27}
+\bibcite{wu2012using}{13}
+\bibcite{guerraz2003procedural}{14}
+\bibcite{qiu2012dynamic}{15}
+\bibcite{chen2010real}{16}
+\bibcite{hempe2013generation}{17}
+\bibcite{mundermann2003modeling}{18}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Skeleton refining evaluation results: our methods, random method, mean method and geometry-based method. \relax }}{10}}
+\newlabel{fig:evaresults}{{12}{10}}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{10}}
 \@writefile{toc}{\contentsline {section}{References}{10}}
-\bibcite{chai2013dynamic}{28}
-\bibcite{luo2013structure}{29}
-\bibcite{hu2014robust}{30}
-\bibcite{hu2014capturing}{31}
-\bibcite{xu2014dynamic}{32}
-\bibcite{funkhouser1993adaptive}{33}
-\bibcite{bommes2013quad}{34}
-\bibcite{ray2006periodic}{35}
-\bibcite{kalberer2007quadcover}{36}
-\bibcite{bommes2009mixed}{37}
-\bibcite{zhang2010wave}{38}
-\bibcite{simulation1997Deborah}{39}
-\bibcite{o2001automatic}{40}
-\bibcite{neubert2007approximate}{41}
-\bibcite{sousa2007vegetation}{42}
-\bibcite{perlin1985image}{43}
-\bibcite{garland1997surface}{44}
-\bibcite{wikihausdorff}{45}
+\bibcite{okabe2005interactive}{19}
+\bibcite{anastacio2006modeling}{20}
+\bibcite{chen2008sketch}{21}
+\bibcite{pirk2012plastic}{22}
+\bibcite{quan2006image}{23}
+\bibcite{tan2007image}{24}
+\bibcite{tan2008single}{25}
+\bibcite{yan2014flower}{26}
+\bibcite{bradley2013image}{27}
+\bibcite{chai2012single}{28}
+\bibcite{chai2013dynamic}{29}
+\bibcite{luo2013structure}{30}
+\bibcite{hu2014robust}{31}
+\bibcite{hu2014capturing}{32}
+\bibcite{xu2014dynamic}{33}
+\bibcite{funkhouser1993adaptive}{34}
+\bibcite{bommes2013quad}{35}
+\bibcite{ray2006periodic}{36}
+\bibcite{kalberer2007quadcover}{37}
+\bibcite{bommes2009mixed}{38}
+\bibcite{zhang2010wave}{39}
+\bibcite{simulation1997Deborah}{40}
+\bibcite{o2001automatic}{41}
+\bibcite{neubert2007approximate}{42}
+\bibcite{sousa2007vegetation}{43}
+\bibcite{perlin1985image}{44}
+\bibcite{garland1997surface}{45}
+\bibcite{wikihausdorff}{46}
 \@writefile{toc}{\contentsline {section}{Biographies}{11}}
 \@writefile{toc}{\contentsline {subsection}{Zengzhi Fan}{11}}
 \@writefile{toc}{\contentsline {subsection}{Bin Sheng}{11}}
